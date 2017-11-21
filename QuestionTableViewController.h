@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  QuestionTableViewController.h
 //  Grounding_project el16cg
 //
 //  Created by Conor Gilbert [el16cg] on 21/11/2017.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
-
+@interface QuestionTableViewController : UITableViewController
 
 @end
-
