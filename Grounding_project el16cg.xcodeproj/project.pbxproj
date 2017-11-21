@@ -16,6 +16,7 @@
 		A8D1C07D1FC435A3004379E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8D1C07B1FC435A3004379E0 /* LaunchScreen.storyboard */; };
 		A8D1C0881FC435A3004379E0 /* Grounding_project_el16cgTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D1C0871FC435A3004379E0 /* Grounding_project_el16cgTests.m */; };
 		A8D1C0931FC435A3004379E0 /* Grounding_project_el16cgUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D1C0921FC435A3004379E0 /* Grounding_project_el16cgUITests.m */; };
+		A8D1C0A11FC447B1004379E0 /* Button.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A8D1C0A01FC447B1004379E0 /* Button.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		A8D1C08E1FC435A3004379E0 /* Grounding_project el16cgUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Grounding_project el16cgUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D1C0921FC435A3004379E0 /* Grounding_project_el16cgUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Grounding_project_el16cgUITests.m; sourceTree = "<group>"; };
 		A8D1C0941FC435A3004379E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8D1C0A01FC447B1004379E0 /* Button.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Button.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				A8D1C0741FC435A3004379E0 /* SecondViewController.m */,
 				A8D1C0761FC435A3004379E0 /* Main.storyboard */,
 				A8D1C0791FC435A3004379E0 /* Assets.xcassets */,
+				A8D1C0A01FC447B1004379E0 /* Button.jpeg */,
 				A8D1C07B1FC435A3004379E0 /* LaunchScreen.storyboard */,
 				A8D1C07E1FC435A3004379E0 /* Info.plist */,
 				A8D1C06A1FC435A3004379E0 /* Supporting Files */,
@@ -254,6 +257,7 @@
 				A8D1C07D1FC435A3004379E0 /* LaunchScreen.storyboard in Resources */,
 				A8D1C07A1FC435A3004379E0 /* Assets.xcassets in Resources */,
 				A8D1C0781FC435A3004379E0 /* Main.storyboard in Resources */,
+				A8D1C0A11FC447B1004379E0 /* Button.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +517,7 @@
 				A8D1C0991FC435A3004379E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8D1C09A1FC435A3004379E0 /* Build configuration list for PBXNativeTarget "Grounding_project el16cgTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +526,7 @@
 				A8D1C09C1FC435A3004379E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8D1C09D1FC435A3004379E0 /* Build configuration list for PBXNativeTarget "Grounding_project el16cgUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +535,7 @@
 				A8D1C09F1FC435A3004379E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
