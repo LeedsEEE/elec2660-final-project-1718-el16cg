@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A85B09251FC6F3F800D60147 /* right-speaker-with-three-sound-waves.png in Resources */ = {isa = PBXBuildFile; fileRef = A85B09241FC6F3F800D60147 /* right-speaker-with-three-sound-waves.png */; };
+		A85B09281FC6F76400D60147 /* LevellingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A85B09271FC6F76400D60147 /* LevellingViewController.m */; };
 		A8768F531FC4863C00F55F6E /* QuestionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8768F521FC4863C00F55F6E /* QuestionTableViewController.m */; };
 		A8D1C06C1FC435A3004379E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D1C06B1FC435A3004379E0 /* main.m */; };
 		A8D1C06F1FC435A3004379E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D1C06E1FC435A3004379E0 /* AppDelegate.m */; };
@@ -39,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A85B09241FC6F3F800D60147 /* right-speaker-with-three-sound-waves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-speaker-with-three-sound-waves.png"; sourceTree = "<group>"; };
+		A85B09261FC6F76400D60147 /* LevellingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevellingViewController.h; sourceTree = "<group>"; };
+		A85B09271FC6F76400D60147 /* LevellingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevellingViewController.m; sourceTree = "<group>"; };
 		A8768F511FC4863C00F55F6E /* QuestionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionTableViewController.h; sourceTree = "<group>"; };
 		A8768F521FC4863C00F55F6E /* QuestionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionTableViewController.m; sourceTree = "<group>"; };
 		A8D1C0671FC435A3004379E0 /* Grounding_project el16cg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grounding_project el16cg.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,11 +125,14 @@
 				A8D1C0731FC435A3004379E0 /* QuestionViewController.h */,
 				A8D1C0741FC435A3004379E0 /* QuestionViewController.m */,
 				A8D1C0761FC435A3004379E0 /* Main.storyboard */,
+				A85B09261FC6F76400D60147 /* LevellingViewController.h */,
+				A85B09271FC6F76400D60147 /* LevellingViewController.m */,
 				A8D1C0791FC435A3004379E0 /* Assets.xcassets */,
 				A8D1C0A01FC447B1004379E0 /* Button.jpeg */,
 				A8D1C07B1FC435A3004379E0 /* LaunchScreen.storyboard */,
 				A8D1C07E1FC435A3004379E0 /* Info.plist */,
 				A8E40D711FC4AD7B0069C468 /* Mic.png */,
+				A85B09241FC6F3F800D60147 /* right-speaker-with-three-sound-waves.png */,
 				A8D1C06A1FC435A3004379E0 /* Supporting Files */,
 			);
 			path = "Grounding_project el16cg";
@@ -266,6 +274,7 @@
 				A8D1C07A1FC435A3004379E0 /* Assets.xcassets in Resources */,
 				A8D1C0781FC435A3004379E0 /* Main.storyboard in Resources */,
 				A8D1C0A11FC447B1004379E0 /* Button.jpeg in Resources */,
+				A85B09251FC6F3F800D60147 /* right-speaker-with-three-sound-waves.png in Resources */,
 				A8E40D721FC4AD7B0069C468 /* Mic.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8D1C0751FC435A3004379E0 /* QuestionViewController.m in Sources */,
+				A85B09281FC6F76400D60147 /* LevellingViewController.m in Sources */,
 				A8D1C06F1FC435A3004379E0 /* AppDelegate.m in Sources */,
 				A8D1C0721FC435A3004379E0 /* HomeViewController.m in Sources */,
 				A8768F531FC4863C00F55F6E /* QuestionTableViewController.m in Sources */,
