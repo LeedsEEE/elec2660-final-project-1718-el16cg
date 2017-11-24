@@ -10,6 +10,8 @@
 		A85B09251FC6F3F800D60147 /* right-speaker-with-three-sound-waves.png in Resources */ = {isa = PBXBuildFile; fileRef = A85B09241FC6F3F800D60147 /* right-speaker-with-three-sound-waves.png */; };
 		A85B09281FC6F76400D60147 /* LevellingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A85B09271FC6F76400D60147 /* LevellingViewController.m */; };
 		A8768F531FC4863C00F55F6E /* QuestionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8768F521FC4863C00F55F6E /* QuestionTableViewController.m */; };
+		A8820BC11FC84F7A000DD5B5 /* draw_view.m in Sources */ = {isa = PBXBuildFile; fileRef = A8820BC01FC84F7A000DD5B5 /* draw_view.m */; };
+		A8820BC41FC84FBE000DD5B5 /* BreathingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8820BC31FC84FBE000DD5B5 /* BreathingViewController.m */; };
 		A8D1C06C1FC435A3004379E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D1C06B1FC435A3004379E0 /* main.m */; };
 		A8D1C06F1FC435A3004379E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D1C06E1FC435A3004379E0 /* AppDelegate.m */; };
 		A8D1C0721FC435A3004379E0 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D1C0711FC435A3004379E0 /* HomeViewController.m */; };
@@ -46,6 +48,10 @@
 		A85B09271FC6F76400D60147 /* LevellingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevellingViewController.m; sourceTree = "<group>"; };
 		A8768F511FC4863C00F55F6E /* QuestionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionTableViewController.h; sourceTree = "<group>"; };
 		A8768F521FC4863C00F55F6E /* QuestionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionTableViewController.m; sourceTree = "<group>"; };
+		A8820BBF1FC84F7A000DD5B5 /* draw_view.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = draw_view.h; sourceTree = "<group>"; };
+		A8820BC01FC84F7A000DD5B5 /* draw_view.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = draw_view.m; sourceTree = "<group>"; };
+		A8820BC21FC84FBE000DD5B5 /* BreathingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BreathingViewController.h; sourceTree = "<group>"; };
+		A8820BC31FC84FBE000DD5B5 /* BreathingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BreathingViewController.m; sourceTree = "<group>"; };
 		A8D1C0671FC435A3004379E0 /* Grounding_project el16cg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grounding_project el16cg.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D1C06B1FC435A3004379E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A8D1C06D1FC435A3004379E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -125,6 +131,10 @@
 				A8D1C0731FC435A3004379E0 /* QuestionViewController.h */,
 				A8D1C0741FC435A3004379E0 /* QuestionViewController.m */,
 				A8D1C0761FC435A3004379E0 /* Main.storyboard */,
+				A8820BBF1FC84F7A000DD5B5 /* draw_view.h */,
+				A8820BC01FC84F7A000DD5B5 /* draw_view.m */,
+				A8820BC21FC84FBE000DD5B5 /* BreathingViewController.h */,
+				A8820BC31FC84FBE000DD5B5 /* BreathingViewController.m */,
 				A85B09261FC6F76400D60147 /* LevellingViewController.h */,
 				A85B09271FC6F76400D60147 /* LevellingViewController.m */,
 				A8D1C0791FC435A3004379E0 /* Assets.xcassets */,
@@ -305,7 +315,9 @@
 				A8D1C06F1FC435A3004379E0 /* AppDelegate.m in Sources */,
 				A8D1C0721FC435A3004379E0 /* HomeViewController.m in Sources */,
 				A8768F531FC4863C00F55F6E /* QuestionTableViewController.m in Sources */,
+				A8820BC11FC84F7A000DD5B5 /* draw_view.m in Sources */,
 				A8D1C06C1FC435A3004379E0 /* main.m in Sources */,
+				A8820BC41FC84FBE000DD5B5 /* BreathingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

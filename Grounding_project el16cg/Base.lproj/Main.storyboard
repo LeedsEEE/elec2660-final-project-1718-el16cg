@@ -152,15 +152,15 @@
             </objects>
             <point key="canvasLocation" x="1972" y="136"/>
         </scene>
-        <!--View Controller-->
+        <!--Breathing View Controller-->
         <scene sceneID="YNR-nS-Scw">
             <objects>
-                <viewController id="KRV-vN-eBU" sceneMemberID="viewController">
+                <viewController id="KRV-vN-eBU" customClass="BreathingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ET5-ow-E7r"/>
                         <viewControllerLayoutGuide type="bottom" id="daD-lO-56u"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aHa-iC-TX1">
+                    <view key="view" contentMode="scaleToFill" id="aHa-iC-TX1" customClass="draw_view">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
