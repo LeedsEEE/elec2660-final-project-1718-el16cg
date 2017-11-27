@@ -13,7 +13,7 @@
 @end
 
 @implementation QuestionViewController
-
+int x = 1;
 - (void)viewDidLoad {
     [super viewDidLoad];
      //self.synthesizer = [[AVSpeechSynthesizer alloc] init];
@@ -34,5 +34,25 @@
 }
 
 - (IBAction)AnswerBox:(UITextField *)sender {
+    
+    NSLog(@"Answer %d - %@",x, self.AnswerBox.text);
+    
+}
+
+- (IBAction)backgroundPressed:(id)sender {
+    
+    if([self.AnswerBox isFirstResponder]) {
+        [self.AnswerBox resignFirstResponder];
+    }
+    
+   
+    
+}
+
+- (IBAction)submitPressed:(id)sender {
+
+    self.answer1.text =[NSString stringWithFormat:@"Answer %d - %@",x, self.AnswerBox.text];
+    
+    
 }
 @end

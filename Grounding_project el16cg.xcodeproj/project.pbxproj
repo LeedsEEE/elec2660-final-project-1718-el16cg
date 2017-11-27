@@ -12,6 +12,7 @@
 		A8768F531FC4863C00F55F6E /* QuestionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8768F521FC4863C00F55F6E /* QuestionTableViewController.m */; };
 		A8820BC11FC84F7A000DD5B5 /* draw_view.m in Sources */ = {isa = PBXBuildFile; fileRef = A8820BC01FC84F7A000DD5B5 /* draw_view.m */; };
 		A8820BC41FC84FBE000DD5B5 /* BreathingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8820BC31FC84FBE000DD5B5 /* BreathingViewController.m */; };
+		A8820BC71FC87861000DD5B5 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8820BC61FC87861000DD5B5 /* SpriteKit.framework */; };
 		A8D1C06C1FC435A3004379E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D1C06B1FC435A3004379E0 /* main.m */; };
 		A8D1C06F1FC435A3004379E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D1C06E1FC435A3004379E0 /* AppDelegate.m */; };
 		A8D1C0721FC435A3004379E0 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D1C0711FC435A3004379E0 /* HomeViewController.m */; };
@@ -52,6 +53,7 @@
 		A8820BC01FC84F7A000DD5B5 /* draw_view.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = draw_view.m; sourceTree = "<group>"; };
 		A8820BC21FC84FBE000DD5B5 /* BreathingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BreathingViewController.h; sourceTree = "<group>"; };
 		A8820BC31FC84FBE000DD5B5 /* BreathingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BreathingViewController.m; sourceTree = "<group>"; };
+		A8820BC61FC87861000DD5B5 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		A8D1C0671FC435A3004379E0 /* Grounding_project el16cg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grounding_project el16cg.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D1C06B1FC435A3004379E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A8D1C06D1FC435A3004379E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8820BC71FC87861000DD5B5 /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A8820BC51FC87861000DD5B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8820BC61FC87861000DD5B5 /* SpriteKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A8D1C05E1FC435A3004379E0 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +119,7 @@
 				A8D1C0861FC435A3004379E0 /* Grounding_project el16cgTests */,
 				A8D1C0911FC435A3004379E0 /* Grounding_project el16cgUITests */,
 				A8D1C0681FC435A3004379E0 /* Products */,
+				A8820BC51FC87861000DD5B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,10 +143,10 @@
 				A8D1C0731FC435A3004379E0 /* QuestionViewController.h */,
 				A8D1C0741FC435A3004379E0 /* QuestionViewController.m */,
 				A8D1C0761FC435A3004379E0 /* Main.storyboard */,
+				A8820BC31FC84FBE000DD5B5 /* BreathingViewController.m */,
 				A8820BBF1FC84F7A000DD5B5 /* draw_view.h */,
 				A8820BC01FC84F7A000DD5B5 /* draw_view.m */,
 				A8820BC21FC84FBE000DD5B5 /* BreathingViewController.h */,
-				A8820BC31FC84FBE000DD5B5 /* BreathingViewController.m */,
 				A85B09261FC6F76400D60147 /* LevellingViewController.h */,
 				A85B09271FC6F76400D60147 /* LevellingViewController.m */,
 				A8D1C0791FC435A3004379E0 /* Assets.xcassets */,
