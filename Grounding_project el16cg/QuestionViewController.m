@@ -51,7 +51,118 @@ int x = 1;
 
 - (IBAction)submitPressed:(id)sender {
 
-    self.answer1.text =[NSString stringWithFormat:@"Answer %d - %@",x, self.AnswerBox.text];
+    if (x==1) {
+    
+    
+    self.answer1.text =[NSString stringWithFormat:@"%d - %@",x, self.AnswerBox.text];
+        
+        x=x+1;
+        
+        self.QuestionBox.text = @"question2";
+        
+    }
+    else if (x==2) {
+        
+        
+        
+        self.answer2.text =[NSString stringWithFormat:@"%d - %@",x, self.AnswerBox.text];
+        
+        x=x+1;
+        
+        
+        self.QuestionBox.text = @"question3";
+    
+    }
+    else if (x==3) {
+        
+        
+        
+        self.answer3.text =[NSString stringWithFormat:@"%d - %@",x, self.AnswerBox.text];
+        
+        x=x+1;
+        self.QuestionBox.text = @"question4";
+        
+    }
+    else if (x==4) {
+        
+        
+        
+        self.answer4.text =[NSString stringWithFormat:@"%d - %@",x, self.AnswerBox.text];
+        
+        x=x+1;
+        self.QuestionBox.text = @"question5";
+        
+    }
+    else if (x==5) {
+        
+        
+        
+        self.answer5.text =[NSString stringWithFormat:@"%d - %@",x, self.AnswerBox.text];
+        
+        x=x+1;
+        self.QuestionBox.text = @"question6";
+        
+    }
+    else if (x==6) {
+        
+        
+        
+        self.answer6.text =[NSString stringWithFormat:@"%d - %@",x, self.AnswerBox.text];
+        
+        x=x+1;
+        self.QuestionBox.text = @"question7";
+        
+    }
+    else if (x==7) {
+        
+        
+        
+        self.answer7.text =[NSString stringWithFormat:@"%d - %@",x, self.AnswerBox.text];
+        
+        x=x+1;
+        self.QuestionBox.text = @"question8";
+        
+    }
+    else if (x==8) {
+        
+        
+        
+        self.answer8.text =[NSString stringWithFormat:@"%d - %@",x, self.AnswerBox.text];
+        
+        x=x+1;
+        self.QuestionBox.text = @"question9";
+        
+    }
+    else if (x==9) {
+        
+        
+        
+        self.answer9.text =[NSString stringWithFormat:@"%d - %@",x, self.AnswerBox.text];
+        
+        x=x+1;
+        self.QuestionBox.text = @"question10";
+        
+    }
+    else if (x==10) {
+        
+        
+        
+        self.answer10.text =[NSString stringWithFormat:@"%d - %@",x, self.AnswerBox.text];
+        
+        x=x+1;
+        self.QuestionBox.text = @"question11";
+        
+    }
+    else if (x==11) {
+        
+        
+        
+        self.answer11.text =[NSString stringWithFormat:@"%d - %@",x, self.AnswerBox.text];
+        
+        x=x+1;
+        self.QuestionBox.text = @"No more Questions";
+        
+    }
     
     
 }
