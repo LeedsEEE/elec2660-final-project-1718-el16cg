@@ -14,4 +14,9 @@
 -(void) handleTimer1:(NSTimer *)timer;
 
 
+//-(void) handleTimer2:(NSTimer *)timer;
+
+//@property int d;
+
+
 @end

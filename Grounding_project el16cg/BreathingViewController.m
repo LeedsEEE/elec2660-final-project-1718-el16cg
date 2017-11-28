@@ -13,24 +13,48 @@
 @end
 
 @implementation BreathingViewController
+
+int c=1;
+
 int d=0;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     
+   // if(d<200){
+    
+    
+    
              NSTimer *timer;
     
-             timer = [NSTimer scheduledTimerWithTimeInterval: 0.5
+             timer = [NSTimer scheduledTimerWithTimeInterval: 0.005
                                                       target: self
                                                     selector: @selector(handleTimer1:)
                                                     userInfo: nil
-                                                     repeats: YES];
+                                                     repeats: YES];}
+
+//
+//     else if (d>0){
+//    
+//         [NSTimer scheduledTimerWithTimeInterval: 0.005
+//                                             target: self
+//                                           selector: @selector(handleTimer2:)
+//                                           userInfo: nil
+//                                            repeats: NO];}
+//
+//
+//
+//
+//
+//
+
+
+
     
     
     
-    
-}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -41,8 +65,15 @@ int d=0;
 
 
 -(void)handleTimer1:(NSTimer *)timer {
-    d=d+1;
+    d=d+c;
+    if(d>200){
+        
+        
+        c=-c;
+    }
     
+    else if (d<0) {c=-c;
+    }
     
     NSLog(@" %d",d);
 }
