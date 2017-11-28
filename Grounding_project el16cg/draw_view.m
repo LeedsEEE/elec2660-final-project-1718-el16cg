@@ -33,7 +33,6 @@ int MainInt;
     
     
     CGColorRef white = [[UIColor whiteColor] CGColor];
-    CGColorRef blue = [[UIColor blueColor] CGColor];
     CGColorRef yellow = [[UIColor yellowColor] CGColor];
     CGColorRef green = [[UIColor greenColor] CGColor];
     
@@ -44,24 +43,23 @@ int MainInt;
     CGContextFillRect(context, CGRectMake(0,0,width,height));
 // white rectangle to make background
     
- while (1) {
-        
-
-     while (d<200) {
-           d=d+1;
-         NSTimer *timer;
-         
-         timer = [NSTimer scheduledTimerWithTimeInterval: 0.5
-                                                  target: self
-                                                selector: @selector(handleTimer:)
-                                                userInfo: nil
-                                                 repeats: YES];
-       };
-       while (d>0) {
-           d=d-1;
-            [NSThread sleepForTimeInterval:0.05];
-       };
-       
+// while (1) {
+//        
+//
+//     while (d<200) {
+////           d=d+1;
+////         NSTimer *timer;
+////         
+////         timer = [NSTimer scheduledTimerWithTimeInterval: 0.5
+////                                                  target: self
+////                                                selector: @selector(handleTimer1:)
+////                                                userInfo: nil
+////                                                 repeats: YES];
+//       };
+//       while (d>0) {
+//           d=d-1;
+//       };
+//       
   
 
 
@@ -75,9 +73,11 @@ int MainInt;
     CGContextFillEllipseInRect(context, CGRectMake((width-r)/2, (height-r)/2, r, r));
 
    }
-};
+//};
 
-
+-(void)handleTimer1:(NSTimer *)timer {
+    //stuff that happens on tick
+}
 
     
   

@@ -13,16 +13,40 @@
 @end
 
 @implementation BreathingViewController
-
+int d=0;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+             NSTimer *timer;
+    
+             timer = [NSTimer scheduledTimerWithTimeInterval: 0.5
+                                                      target: self
+                                                    selector: @selector(handleTimer1:)
+                                                    userInfo: nil
+                                                     repeats: YES];
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
+
+-(void)handleTimer1:(NSTimer *)timer {
+    d=d+1;
+    
+    
+    NSLog(@" %d",d);
+}
+
 
 /*
 #pragma mark - Navigation

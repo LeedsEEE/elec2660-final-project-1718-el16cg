@@ -13,6 +13,6 @@
 
 @interface draw_view : UIView
 
-
+-(void) handleTimer1:(NSTimer *)timer;
 
 @end

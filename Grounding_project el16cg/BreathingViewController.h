@@ -10,4 +10,8 @@
 
 @interface BreathingViewController : UIViewController
 
+
+-(void) handleTimer1:(NSTimer *)timer;
+
+
 @end
