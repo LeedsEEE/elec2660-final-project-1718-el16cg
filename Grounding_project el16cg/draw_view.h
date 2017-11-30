@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 
 #import <SpriteKit/SpriteKit.h>
-
+#import "BreathingViewController.h"
 
 @interface draw_view : UIView
 
 -(void) handleTimer1:(NSTimer *)timer;
+
+@property BreathingViewController* BVC;
 
 @end

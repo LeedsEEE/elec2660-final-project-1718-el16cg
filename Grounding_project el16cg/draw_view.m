@@ -21,8 +21,7 @@ int MainInt;
     // Drawing code
 
     
-    int d=0;
-    int r=100+d;
+    int r=100+self.BVC.d;
     // r is the radius
     // d is the change of the radius ad is time dependant
 
@@ -43,7 +42,7 @@ int MainInt;
     CGContextFillRect(context, CGRectMake(0,0,width,height));
 // white rectangle to make background
     
-// while (1) {
+ while (1) {
 //        
 //
 //     while (d<200) {
@@ -73,7 +72,7 @@ int MainInt;
     CGContextFillEllipseInRect(context, CGRectMake((width-r)/2, (height-r)/2, r, r));
 
    }
-//};
+};
 
 -(void)handleTimer1:(NSTimer *)timer {
     //stuff that happens on tick

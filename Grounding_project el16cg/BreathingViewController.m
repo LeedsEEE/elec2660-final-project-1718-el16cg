@@ -14,9 +14,10 @@
 
 @implementation BreathingViewController
 
-int c=1;
-
+int c=100;
+//rate of change of d
 int d=0;
+//rate of change of r
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -28,7 +29,7 @@ int d=0;
     
              NSTimer *timer;
     
-             timer = [NSTimer scheduledTimerWithTimeInterval: 0.005
+             timer = [NSTimer scheduledTimerWithTimeInterval: 1
                                                       target: self
                                                     selector: @selector(handleTimer1:)
                                                     userInfo: nil
