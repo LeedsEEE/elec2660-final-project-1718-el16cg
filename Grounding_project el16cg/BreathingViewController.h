@@ -17,6 +17,9 @@
 //-(void) handleTimer2:(NSTimer *)timer;
 
 @property int d;
+@property (weak, nonatomic) IBOutlet UIImageView *circlesLarge;
+@property (weak, nonatomic) IBOutlet UIImageView *circlesMedium;
+@property (weak, nonatomic) IBOutlet UIImageView *circlesSmall;
 
 
 @end

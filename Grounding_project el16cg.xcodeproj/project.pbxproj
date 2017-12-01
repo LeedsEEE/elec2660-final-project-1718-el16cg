@@ -13,6 +13,7 @@
 		A8820BC11FC84F7A000DD5B5 /* draw_view.m in Sources */ = {isa = PBXBuildFile; fileRef = A8820BC01FC84F7A000DD5B5 /* draw_view.m */; };
 		A8820BC41FC84FBE000DD5B5 /* BreathingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8820BC31FC84FBE000DD5B5 /* BreathingViewController.m */; };
 		A8820BC71FC87861000DD5B5 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8820BC61FC87861000DD5B5 /* SpriteKit.framework */; };
+		A8B463161FD178380034F646 /* Circle.png in Resources */ = {isa = PBXBuildFile; fileRef = A8B463151FD178380034F646 /* Circle.png */; };
 		A8D1C06C1FC435A3004379E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D1C06B1FC435A3004379E0 /* main.m */; };
 		A8D1C06F1FC435A3004379E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D1C06E1FC435A3004379E0 /* AppDelegate.m */; };
 		A8D1C0721FC435A3004379E0 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D1C0711FC435A3004379E0 /* HomeViewController.m */; };
@@ -23,7 +24,6 @@
 		A8D1C0881FC435A3004379E0 /* Grounding_project_el16cgTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D1C0871FC435A3004379E0 /* Grounding_project_el16cgTests.m */; };
 		A8D1C0931FC435A3004379E0 /* Grounding_project_el16cgUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D1C0921FC435A3004379E0 /* Grounding_project_el16cgUITests.m */; };
 		A8D1C0A11FC447B1004379E0 /* Button.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A8D1C0A01FC447B1004379E0 /* Button.jpeg */; };
-		A8E40D721FC4AD7B0069C468 /* Mic.png in Resources */ = {isa = PBXBuildFile; fileRef = A8E40D711FC4AD7B0069C468 /* Mic.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +54,7 @@
 		A8820BC21FC84FBE000DD5B5 /* BreathingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BreathingViewController.h; sourceTree = "<group>"; };
 		A8820BC31FC84FBE000DD5B5 /* BreathingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BreathingViewController.m; sourceTree = "<group>"; };
 		A8820BC61FC87861000DD5B5 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		A8B463151FD178380034F646 /* Circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Circle.png; sourceTree = "<group>"; };
 		A8D1C0671FC435A3004379E0 /* Grounding_project el16cg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grounding_project el16cg.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D1C06B1FC435A3004379E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A8D1C06D1FC435A3004379E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,7 +74,6 @@
 		A8D1C0921FC435A3004379E0 /* Grounding_project_el16cgUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Grounding_project_el16cgUITests.m; sourceTree = "<group>"; };
 		A8D1C0941FC435A3004379E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8D1C0A01FC447B1004379E0 /* Button.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Button.jpeg; sourceTree = "<group>"; };
-		A8E40D711FC4AD7B0069C468 /* Mic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mic.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,8 +153,8 @@
 				A8D1C0A01FC447B1004379E0 /* Button.jpeg */,
 				A8D1C07B1FC435A3004379E0 /* LaunchScreen.storyboard */,
 				A8D1C07E1FC435A3004379E0 /* Info.plist */,
-				A8E40D711FC4AD7B0069C468 /* Mic.png */,
 				A85B09241FC6F3F800D60147 /* right-speaker-with-three-sound-waves.png */,
+				A8B463151FD178380034F646 /* Circle.png */,
 				A8D1C06A1FC435A3004379E0 /* Supporting Files */,
 			);
 			path = "Grounding_project el16cg";
@@ -293,11 +293,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8D1C07D1FC435A3004379E0 /* LaunchScreen.storyboard in Resources */,
+				A8B463161FD178380034F646 /* Circle.png in Resources */,
 				A8D1C07A1FC435A3004379E0 /* Assets.xcassets in Resources */,
 				A8D1C0781FC435A3004379E0 /* Main.storyboard in Resources */,
 				A8D1C0A11FC447B1004379E0 /* Button.jpeg in Resources */,
 				A85B09251FC6F3F800D60147 /* right-speaker-with-three-sound-waves.png in Resources */,
-				A8E40D721FC4AD7B0069C468 /* Mic.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

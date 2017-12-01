@@ -25,7 +25,9 @@ int d=0;
     
    // if(d<200){
     
-    
+    self.circlesLarge.hidden= true;
+    self.circlesMedium.hidden= true;
+    self.circlesSmall.hidden= false;
     
              NSTimer *timer;
     
@@ -77,6 +79,35 @@ int d=0;
     }
     
     NSLog(@" %d",d);
+    
+    
+    if (d==0) {
+        self.circlesLarge.hidden= true;
+        self.circlesMedium.hidden= true;
+        self.circlesSmall.hidden= false;
+    }
+    
+    
+    if (d==100) {
+        self.circlesLarge.hidden= true;
+        self.circlesMedium.hidden= false;
+        self.circlesSmall.hidden= true;
+    }
+    
+    
+    
+    
+    
+    if (d==200) {
+        self.circlesLarge.hidden= false;
+        self.circlesMedium.hidden= true;
+        self.circlesSmall.hidden= true;
+    }
+    
+
+    
+    
+    
 }
 
 

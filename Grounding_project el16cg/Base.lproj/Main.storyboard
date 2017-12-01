@@ -283,13 +283,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="fJP-A4-CcG">
+                                <frame key="frameInset" minX="67" minY="243" width="240" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="W4z-PK-shV">
+                                <frame key="frameInset" minX="67" minY="269" width="240" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="sQ4-Eb-zl3">
+                                <frame key="frameInset" minX="55" minY="212" width="264" height="235"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="circlesLarge" destination="sQ4-Eb-zl3" id="e4p-u0-1G0"/>
+                        <outlet property="circlesMedium" destination="fJP-A4-CcG" id="A8W-vK-b9F"/>
+                        <outlet property="circlesSmall" destination="W4z-PK-shV" id="jXO-iL-8d4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tp1-22-fLZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1601" y="795"/>
+            <point key="canvasLocation" x="1600.8" y="794.75262368815595"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WAX-TQ-LfO">
@@ -310,6 +327,7 @@
     </scenes>
     <resources>
         <image name="Button.jpeg" width="121" height="62"/>
+        <image name="Circle.png" width="151" height="152"/>
         <image name="first" width="30" height="30"/>
         <image name="right-speaker-with-three-sound-waves.png" width="256" height="256"/>
     </resources>
