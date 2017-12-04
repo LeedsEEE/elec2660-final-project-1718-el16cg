@@ -24,6 +24,18 @@
 		A85B09251FC6F3F800D60147 /* right-speaker-with-three-sound-waves.png in Resources */ = {isa = PBXBuildFile; fileRef = A85B09241FC6F3F800D60147 /* right-speaker-with-three-sound-waves.png */; };
 		A85B09281FC6F76400D60147 /* LevellingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A85B09271FC6F76400D60147 /* LevellingViewController.m */; };
 		A8768F531FC4863C00F55F6E /* QuestionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8768F521FC4863C00F55F6E /* QuestionTableViewController.m */; };
+		A880A0721FD5C18A004140EF /* line0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A880A0711FD5C18A004140EF /* line0.jpg */; };
+		A880A0741FD5C18E004140EF /* line15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A880A0731FD5C18E004140EF /* line15.jpg */; };
+		A880A0761FD5C192004140EF /* line30.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A880A0751FD5C192004140EF /* line30.jpg */; };
+		A880A0781FD5C195004140EF /* line45.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A880A0771FD5C195004140EF /* line45.jpg */; };
+		A880A07A1FD5C198004140EF /* line60.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A880A0791FD5C198004140EF /* line60.jpg */; };
+		A880A07C1FD5C19B004140EF /* line75.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A880A07B1FD5C19B004140EF /* line75.jpg */; };
+		A880A07E1FD5C28D004140EF /* line90.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A880A07D1FD5C28D004140EF /* line90.jpg */; };
+		A880A0841FD5C296004140EF /* lineNeg15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A880A07F1FD5C296004140EF /* lineNeg15.jpg */; };
+		A880A0851FD5C296004140EF /* lineNeg30.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A880A0801FD5C296004140EF /* lineNeg30.jpg */; };
+		A880A0861FD5C296004140EF /* lineNeg45.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A880A0811FD5C296004140EF /* lineNeg45.jpg */; };
+		A880A0871FD5C296004140EF /* lineNeg60.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A880A0821FD5C296004140EF /* lineNeg60.jpg */; };
+		A880A0881FD5C296004140EF /* lineNeg75.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A880A0831FD5C296004140EF /* lineNeg75.jpg */; };
 		A8820BC11FC84F7A000DD5B5 /* draw_view.m in Sources */ = {isa = PBXBuildFile; fileRef = A8820BC01FC84F7A000DD5B5 /* draw_view.m */; };
 		A8820BC41FC84FBE000DD5B5 /* BreathingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8820BC31FC84FBE000DD5B5 /* BreathingViewController.m */; };
 		A8820BC71FC87861000DD5B5 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8820BC61FC87861000DD5B5 /* SpriteKit.framework */; };
@@ -78,6 +90,18 @@
 		A85B09271FC6F76400D60147 /* LevellingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevellingViewController.m; sourceTree = "<group>"; };
 		A8768F511FC4863C00F55F6E /* QuestionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionTableViewController.h; sourceTree = "<group>"; };
 		A8768F521FC4863C00F55F6E /* QuestionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionTableViewController.m; sourceTree = "<group>"; };
+		A880A0711FD5C18A004140EF /* line0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = line0.jpg; sourceTree = "<group>"; };
+		A880A0731FD5C18E004140EF /* line15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = line15.jpg; sourceTree = "<group>"; };
+		A880A0751FD5C192004140EF /* line30.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = line30.jpg; sourceTree = "<group>"; };
+		A880A0771FD5C195004140EF /* line45.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = line45.jpg; sourceTree = "<group>"; };
+		A880A0791FD5C198004140EF /* line60.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = line60.jpg; sourceTree = "<group>"; };
+		A880A07B1FD5C19B004140EF /* line75.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = line75.jpg; sourceTree = "<group>"; };
+		A880A07D1FD5C28D004140EF /* line90.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = line90.jpg; sourceTree = "<group>"; };
+		A880A07F1FD5C296004140EF /* lineNeg15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lineNeg15.jpg; sourceTree = "<group>"; };
+		A880A0801FD5C296004140EF /* lineNeg30.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lineNeg30.jpg; sourceTree = "<group>"; };
+		A880A0811FD5C296004140EF /* lineNeg45.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lineNeg45.jpg; sourceTree = "<group>"; };
+		A880A0821FD5C296004140EF /* lineNeg60.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lineNeg60.jpg; sourceTree = "<group>"; };
+		A880A0831FD5C296004140EF /* lineNeg75.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lineNeg75.jpg; sourceTree = "<group>"; };
 		A8820BBF1FC84F7A000DD5B5 /* draw_view.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = draw_view.h; sourceTree = "<group>"; };
 		A8820BC01FC84F7A000DD5B5 /* draw_view.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = draw_view.m; sourceTree = "<group>"; };
 		A8820BC21FC84FBE000DD5B5 /* BreathingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BreathingViewController.h; sourceTree = "<group>"; };
@@ -200,6 +224,18 @@
 				A855128F1FD5A69800C3DC7E /* bars -60Degrees.jpg */,
 				A85512911FD5A69B00C3DC7E /* bars -75Degrees.jpg */,
 				A85512931FD5A95F00C3DC7E /* bars 90 degrees.jpg */,
+				A880A0711FD5C18A004140EF /* line0.jpg */,
+				A880A0731FD5C18E004140EF /* line15.jpg */,
+				A880A0751FD5C192004140EF /* line30.jpg */,
+				A880A0771FD5C195004140EF /* line45.jpg */,
+				A880A0791FD5C198004140EF /* line60.jpg */,
+				A880A07B1FD5C19B004140EF /* line75.jpg */,
+				A880A07D1FD5C28D004140EF /* line90.jpg */,
+				A880A07F1FD5C296004140EF /* lineNeg15.jpg */,
+				A880A0801FD5C296004140EF /* lineNeg30.jpg */,
+				A880A0811FD5C296004140EF /* lineNeg45.jpg */,
+				A880A0821FD5C296004140EF /* lineNeg60.jpg */,
+				A880A0831FD5C296004140EF /* lineNeg75.jpg */,
 				A8D1C06A1FC435A3004379E0 /* Supporting Files */,
 			);
 			path = "Grounding_project el16cg";
@@ -337,20 +373,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A880A07E1FD5C28D004140EF /* line90.jpg in Resources */,
 				A85512881FD5A67C00C3DC7E /* bars 75Degrees.jpg in Resources */,
 				A855128C1FD5A69100C3DC7E /* bars -30Degrees.jpg in Resources */,
 				A855127E1FD59B8700C3DC7E /* bars 0degrees.jpg in Resources */,
 				A8D1C07D1FC435A3004379E0 /* LaunchScreen.storyboard in Resources */,
+				A880A0721FD5C18A004140EF /* line0.jpg in Resources */,
+				A880A0881FD5C296004140EF /* lineNeg75.jpg in Resources */,
 				A85512861FD5A67400C3DC7E /* bars 60Degrees.jpg in Resources */,
 				A8B463161FD178380034F646 /* Circle.png in Resources */,
 				A85512921FD5A69B00C3DC7E /* bars -75Degrees.jpg in Resources */,
 				A85512841FD5A66C00C3DC7E /* bars 45Degrees.jpg in Resources */,
 				A855128A1FD5A68800C3DC7E /* bars -15Degrees.jpg in Resources */,
+				A880A0781FD5C195004140EF /* line45.jpg in Resources */,
 				A8D1C07A1FC435A3004379E0 /* Assets.xcassets in Resources */,
 				A8D1C0781FC435A3004379E0 /* Main.storyboard in Resources */,
+				A880A07C1FD5C19B004140EF /* line75.jpg in Resources */,
 				A855128E1FD5A69400C3DC7E /* bars -45Degrees.jpg in Resources */,
+				A880A0841FD5C296004140EF /* lineNeg15.jpg in Resources */,
 				A85512821FD5A66900C3DC7E /* bars 30Degrees.jpg in Resources */,
+				A880A0761FD5C192004140EF /* line30.jpg in Resources */,
+				A880A0861FD5C296004140EF /* lineNeg45.jpg in Resources */,
 				A85512901FD5A69800C3DC7E /* bars -60Degrees.jpg in Resources */,
+				A880A0741FD5C18E004140EF /* line15.jpg in Resources */,
+				A880A0851FD5C296004140EF /* lineNeg30.jpg in Resources */,
+				A880A0871FD5C296004140EF /* lineNeg60.jpg in Resources */,
+				A880A07A1FD5C198004140EF /* line60.jpg in Resources */,
 				A85512941FD5A95F00C3DC7E /* bars 90 degrees.jpg in Resources */,
 				A8D1C0A11FC447B1004379E0 /* Button.jpeg in Resources */,
 				A85512801FD5A66400C3DC7E /* bars 15degrees.jpg in Resources */,

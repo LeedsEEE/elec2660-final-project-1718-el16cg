@@ -304,6 +304,66 @@
                                 <frame key="frameInset" minX="39" minY="367" width="240" height="224"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khT-bE-3mh">
+                                <frame key="frameInset" minX="64" minY="101" width="243" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Hold the Phone level then press me"/>
+                                <connections>
+                                    <action selector="leveller:" destination="h6Q-nA-s3o" eventType="touchUpInside" id="2dr-04-zZA"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line0.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7Jn-9C-ZVV">
+                                <frame key="frameInset" minX="67" minY="252" width="262" height="9"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line15.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="eHp-vl-jGj">
+                                <frame key="frameInset" minX="108" minY="214" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line30.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vHm-uM-bbh">
+                                <frame key="frameInset" minX="108" minY="243" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line45.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="V6M-Am-AAF">
+                                <frame key="frameInset" minX="108" minY="252" width="283" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line60.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tg2-jV-RjI">
+                                <frame key="frameInset" minX="121" minY="275" width="288" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line75.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XRn-iB-9yL">
+                                <frame key="frameInset" minX="127" minY="291" width="275" height="236"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line90.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="q7m-Zv-xGZ">
+                                <frame key="frameInset" minX="251" minY="331" width="9" height="258"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lineNeg15.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="l0P-zf-3Il">
+                                <frame key="frameInset" minX="78" minY="220" width="264" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lineNeg30.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7fv-uX-a8D">
+                                <frame key="frameInset" minX="108" minY="243" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lineNeg45.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XGR-Qh-Hp4">
+                                <frame key="frameInset" minX="3" minY="259" width="295" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lineNeg60.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7rD-Bg-XmN">
+                                <frame key="frameInset" minX="-6" minY="268" width="313" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lineNeg75.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PAu-Ps-9kH">
+                                <frame key="frameInset" minX="3" minY="303" width="281" height="266"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line90.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="47l-yR-XpZ">
+                                <frame key="frameInset" minX="156" minY="367" width="7" height="224"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -325,6 +385,19 @@
                         <outlet property="barNeg60" destination="0Tm-o5-730" id="kUI-KH-6ob"/>
                         <outlet property="barNeg75" destination="zDj-DZ-EqC" id="hIw-lI-ZWx"/>
                         <outlet property="barNeg90" destination="3pf-W9-u47" id="Zf7-zh-Nzz"/>
+                        <outlet property="line0" destination="7Jn-9C-ZVV" id="iQX-y5-492"/>
+                        <outlet property="line15" destination="eHp-vl-jGj" id="rm8-xD-8Uy"/>
+                        <outlet property="line30" destination="vHm-uM-bbh" id="BlS-2M-ki4"/>
+                        <outlet property="line45" destination="V6M-Am-AAF" id="GQw-d1-la2"/>
+                        <outlet property="line60" destination="tg2-jV-RjI" id="qUG-Ci-w7b"/>
+                        <outlet property="line75" destination="XRn-iB-9yL" id="m9p-hw-4Fg"/>
+                        <outlet property="line90" destination="q7m-Zv-xGZ" id="bXn-f5-3vx"/>
+                        <outlet property="lineNeg15" destination="l0P-zf-3Il" id="3HY-V2-EJp"/>
+                        <outlet property="lineNeg30" destination="7fv-uX-a8D" id="A7D-Fm-ky5"/>
+                        <outlet property="lineNeg45" destination="XGR-Qh-Hp4" id="GER-Ay-nUU"/>
+                        <outlet property="lineNeg60" destination="7rD-Bg-XmN" id="qcM-Dn-6wr"/>
+                        <outlet property="lineNeg75" destination="PAu-Ps-9kH" id="CJy-tj-3XP"/>
+                        <outlet property="lineNeg90" destination="47l-yR-XpZ" id="usl-H6-iao"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ee-5x-r9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -426,6 +499,18 @@
         <image name="bars 75Degrees.jpg" width="201" height="540"/>
         <image name="bars 90 degrees.jpg" width="62" height="542"/>
         <image name="first" width="30" height="30"/>
+        <image name="line0.jpg" width="213" height="3"/>
+        <image name="line15.jpg" width="204" height="58"/>
+        <image name="line30.jpg" width="183" height="108"/>
+        <image name="line45.jpg" width="150" height="151"/>
+        <image name="line60.jpg" width="107" height="184"/>
+        <image name="line75.jpg" width="57" height="205"/>
+        <image name="line90.jpg" width="3" height="211"/>
+        <image name="lineNeg15.jpg" width="204" height="58"/>
+        <image name="lineNeg30.jpg" width="183" height="108"/>
+        <image name="lineNeg45.jpg" width="150" height="151"/>
+        <image name="lineNeg60.jpg" width="107" height="184"/>
+        <image name="lineNeg75.jpg" width="57" height="205"/>
         <image name="right-speaker-with-three-sound-waves.png" width="256" height="256"/>
     </resources>
 </document>

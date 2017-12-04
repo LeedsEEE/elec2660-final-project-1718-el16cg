@@ -24,6 +24,24 @@
 @property (weak, nonatomic) IBOutlet UIImageView *barNeg60;
 @property (weak, nonatomic) IBOutlet UIImageView *barNeg75;
 @property (weak, nonatomic) IBOutlet UIImageView *barNeg90;
+@property (weak, nonatomic) IBOutlet UIImageView *line0;
+@property (weak, nonatomic) IBOutlet UIImageView *line15;
+@property (weak, nonatomic) IBOutlet UIImageView *line30;
+@property (weak, nonatomic) IBOutlet UIImageView *line45;
+@property (weak, nonatomic) IBOutlet UIImageView *line60;
+@property (weak, nonatomic) IBOutlet UIImageView *line75;
+@property (weak, nonatomic) IBOutlet UIImageView *line90;
+@property (weak, nonatomic) IBOutlet UIImageView *lineNeg15;
+@property (weak, nonatomic) IBOutlet UIImageView *lineNeg30;
+@property (weak, nonatomic) IBOutlet UIImageView *lineNeg45;
+@property (weak, nonatomic) IBOutlet UIImageView *lineNeg60;
+@property (weak, nonatomic) IBOutlet UIImageView *lineNeg75;
+@property (weak, nonatomic) IBOutlet UIImageView *lineNeg90;
 
+
+@property int random;
+
+
+- (IBAction)leveller:(id)sender;
 
 @end
