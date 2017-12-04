@@ -252,6 +252,58 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars 0degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SSN-qT-Eq4">
+                                <frame key="frameInset" minX="67" minY="243" width="240" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars 15degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cR1-FA-F1a">
+                                <frame key="frameInset" minX="127" minY="220" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars 30Degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nxf-XS-EsJ">
+                                <frame key="frameInset" minX="135" minY="252" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars 45Degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ngr-fA-39L">
+                                <frame key="frameInset" minX="202" minY="268" width="146" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars 60Degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="h4t-XQ-CDB">
+                                <frame key="frameInset" minX="155" minY="302" width="240" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars 75Degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kiP-Iy-Kev">
+                                <frame key="frameInset" minX="235" minY="316" width="72" height="223"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars 90 degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="85R-M2-tzK">
+                                <frame key="frameInset" minX="135" minY="367" width="240" height="224"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars -15Degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bUv-ha-ZJe">
+                                <frame key="frameInset" minX="67" minY="220" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars -30Degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SvF-zi-TXc">
+                                <frame key="frameInset" minX="39" minY="252" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars -45Degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xZN-m0-yWo">
+                                <frame key="frameInset" minX="47" minY="275" width="180" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars -60Degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0Tm-o5-730">
+                                <frame key="frameInset" minX="17" minY="303" width="240" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars -75Degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zDj-DZ-EqC">
+                                <frame key="frameInset" minX="17" minY="340" width="240" height="229"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars 90 degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3pf-W9-u47">
+                                <frame key="frameInset" minX="39" minY="367" width="240" height="224"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -259,10 +311,25 @@
                             <constraint firstItem="4FT-cJ-K8S" firstAttribute="centerX" secondItem="yhM-Qo-u06" secondAttribute="centerX" id="vCl-qw-65L"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bar0" destination="SSN-qT-Eq4" id="pfl-n1-I3S"/>
+                        <outlet property="bar15" destination="cR1-FA-F1a" id="Gys-Ht-tYn"/>
+                        <outlet property="bar30" destination="nxf-XS-EsJ" id="Y9P-qM-PnV"/>
+                        <outlet property="bar45" destination="ngr-fA-39L" id="5aF-Dy-UaV"/>
+                        <outlet property="bar60" destination="h4t-XQ-CDB" id="udT-AW-zjk"/>
+                        <outlet property="bar75" destination="kiP-Iy-Kev" id="0cd-Ex-EI7"/>
+                        <outlet property="bar90" destination="85R-M2-tzK" id="69m-7B-GQu"/>
+                        <outlet property="barNeg15" destination="bUv-ha-ZJe" id="xy8-r5-730"/>
+                        <outlet property="barNeg30" destination="SvF-zi-TXc" id="uV2-In-KOt"/>
+                        <outlet property="barNeg45" destination="xZN-m0-yWo" id="bGt-8w-nE7"/>
+                        <outlet property="barNeg60" destination="0Tm-o5-730" id="kUI-KH-6ob"/>
+                        <outlet property="barNeg75" destination="zDj-DZ-EqC" id="hIw-lI-ZWx"/>
+                        <outlet property="barNeg90" destination="3pf-W9-u47" id="Zf7-zh-Nzz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ee-5x-r9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1972" y="136"/>
+            <point key="canvasLocation" x="1972" y="135.38230884557723"/>
         </scene>
         <!--Breathing View Controller-->
         <scene sceneID="YNR-nS-Scw">
@@ -283,6 +350,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="sQ4-Eb-zl3">
+                                <frame key="frameInset" minX="55" minY="212" width="264" height="235"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="fJP-A4-CcG">
                                 <frame key="frameInset" minX="67" minY="243" width="240" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -291,17 +362,31 @@
                                 <frame key="frameInset" minX="67" minY="269" width="240" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="sQ4-Eb-zl3">
-                                <frame key="frameInset" minX="55" minY="212" width="264" height="235"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Breathe in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSb-lW-csK">
+                                <frame key="frameInset" minX="67" minY="505" width="240" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xa6-ZA-vVq">
+                                <frame key="frameInset" minX="150" minY="283" width="76" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="t36-fU-4EE">
+                                <frame key="frameInset" minX="17" minY="136" width="343" height="387"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="breath" destination="KSb-lW-csK" id="k50-ON-5g1"/>
                         <outlet property="circlesLarge" destination="sQ4-Eb-zl3" id="e4p-u0-1G0"/>
+                        <outlet property="circlesLargest" destination="t36-fU-4EE" id="Faw-uW-oPB"/>
                         <outlet property="circlesMedium" destination="fJP-A4-CcG" id="A8W-vK-b9F"/>
                         <outlet property="circlesSmall" destination="W4z-PK-shV" id="jXO-iL-8d4"/>
+                        <outlet property="circlesSmallest" destination="Xa6-ZA-vVq" id="9qL-Ns-Pxf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tp1-22-fLZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -328,6 +413,18 @@
     <resources>
         <image name="Button.jpeg" width="121" height="62"/>
         <image name="Circle.png" width="151" height="152"/>
+        <image name="bars -15Degrees.jpg" width="539" height="192"/>
+        <image name="bars -30Degrees.jpg" width="500" height="320"/>
+        <image name="bars -45Degrees.jpg" width="428" height="429"/>
+        <image name="bars -60Degrees.jpg" width="329" height="501"/>
+        <image name="bars -75Degrees.jpg" width="201" height="540"/>
+        <image name="bars 0degrees.jpg" width="541" height="62"/>
+        <image name="bars 15degrees.jpg" width="539" height="192"/>
+        <image name="bars 30Degrees.jpg" width="500" height="320"/>
+        <image name="bars 45Degrees.jpg" width="428" height="429"/>
+        <image name="bars 60Degrees.jpg" width="325" height="501"/>
+        <image name="bars 75Degrees.jpg" width="201" height="540"/>
+        <image name="bars 90 degrees.jpg" width="62" height="542"/>
         <image name="first" width="30" height="30"/>
         <image name="right-speaker-with-three-sound-waves.png" width="256" height="256"/>
     </resources>

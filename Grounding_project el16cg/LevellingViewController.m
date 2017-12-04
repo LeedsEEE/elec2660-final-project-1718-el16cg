@@ -17,7 +17,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.gyro.startGyro;
+    
+    float z= self.gyro.updateData;
+    
+    
+    
+    
+    
+    
 }
+
+- (void) viewDidDisappear:(BOOL)animated{
+    self.gyro.stop;
+}
+
+//while(1) (
+
+
+          
+
+
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -20,6 +20,9 @@
 @property (weak, nonatomic) IBOutlet UIImageView *circlesLarge;
 @property (weak, nonatomic) IBOutlet UIImageView *circlesMedium;
 @property (weak, nonatomic) IBOutlet UIImageView *circlesSmall;
+@property (weak, nonatomic) IBOutlet UILabel *breath;
+@property (weak, nonatomic) IBOutlet UIImageView *circlesLargest;
+@property (weak, nonatomic) IBOutlet UIImageView *circlesSmallest;
 
 
 @end

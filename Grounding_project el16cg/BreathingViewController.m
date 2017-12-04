@@ -23,40 +23,19 @@ int d=0;
     // Do any additional setup after loading the view.
     
     
-   // if(d<200){
-    
     self.circlesLarge.hidden= true;
     self.circlesMedium.hidden= true;
-    self.circlesSmall.hidden= false;
-    
+    self.circlesSmallest.hidden= false;
+    self.circlesLargest.hidden= true;
+    self.circlesSmall.hidden= true;
              NSTimer *timer;
     
-             timer = [NSTimer scheduledTimerWithTimeInterval: 1
+             timer = [NSTimer scheduledTimerWithTimeInterval: 1.5
                                                       target: self
                                                     selector: @selector(handleTimer1:)
                                                     userInfo: nil
                                                      repeats: YES];}
 
-//
-//     else if (d>0){
-//    
-//         [NSTimer scheduledTimerWithTimeInterval: 0.005
-//                                             target: self
-//                                           selector: @selector(handleTimer2:)
-//                                           userInfo: nil
-//                                            repeats: NO];}
-//
-//
-//
-//
-//
-//
-
-
-
-    
-    
-    
 
 
 - (void)didReceiveMemoryWarning {
@@ -79,12 +58,27 @@ int d=0;
     }
     
     NSLog(@" %d",d);
-    
+    if (d==-100) {
+        self.circlesLarge.hidden= true;
+        self.circlesMedium.hidden= true;
+        self.circlesSmall.hidden= true;
+        self.circlesLargest.hidden= true;
+        self.circlesSmallest.hidden= false;
+        
+        self.breath.text= @"Breathe in";
+        
+        
+    }
     
     if (d==0) {
         self.circlesLarge.hidden= true;
         self.circlesMedium.hidden= true;
         self.circlesSmall.hidden= false;
+        self.circlesLargest.hidden= true;
+        self.circlesSmallest.hidden= true;
+       
+        
+        
     }
     
     
@@ -92,6 +86,8 @@ int d=0;
         self.circlesLarge.hidden= true;
         self.circlesMedium.hidden= false;
         self.circlesSmall.hidden= true;
+        self.circlesLargest.hidden= true;
+        self.circlesSmallest.hidden= true;
     }
     
     
@@ -102,9 +98,25 @@ int d=0;
         self.circlesLarge.hidden= false;
         self.circlesMedium.hidden= true;
         self.circlesSmall.hidden= true;
+        self.circlesLargest.hidden= true;
+        self.circlesSmallest.hidden= true;
+        
+        ;
+        
+        
     }
     
-
+    if (d==300) {
+        self.circlesLarge.hidden= true;
+        self.circlesMedium.hidden= true;
+        self.circlesSmall.hidden= true;
+        self.circlesLargest.hidden= false;
+        self.circlesSmallest.hidden= true;
+        
+        self.breath.text= @"Breathe out";
+        
+        
+    }
     
     
     

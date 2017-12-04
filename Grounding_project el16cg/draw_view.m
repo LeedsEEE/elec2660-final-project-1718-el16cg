@@ -19,12 +19,6 @@ int MainInt;
 // An empty implementation adversely affects performance during animation.
 //- (void)drawRect:(CGRect)rect {
 //    // Drawing code
-//
-//    
-//    int r=100+self.BVC.d;
-//    // r is the radius
-//    // d is the change of the radius ad is time dependant
-//
 //    
 //    CGFloat width = [UIScreen mainScreen].bounds.size.width;
 //    CGFloat height = [UIScreen mainScreen].bounds.size.height;
