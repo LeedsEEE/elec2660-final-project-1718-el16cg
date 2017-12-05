@@ -392,6 +392,13 @@
                                     <segue destination="KRV-vN-eBU" kind="show" id="hvU-cP-C17"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score - 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oy-Tf-kkQ">
+                                <frame key="frameInset" minY="638" width="227" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -428,11 +435,12 @@
                         <outlet property="lineNeg90" destination="47l-yR-XpZ" id="usl-H6-iao"/>
                         <outlet property="nextSection" destination="kH2-U2-FvB" id="qX3-iG-fVP"/>
                         <outlet property="nextSectionImage" destination="1Oq-Bs-EQq" id="HmU-oi-ndL"/>
+                        <outlet property="scoreLabel" destination="6oy-Tf-kkQ" id="7c5-wl-7oW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ee-5x-r9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2023" y="155"/>
+            <point key="canvasLocation" x="2021.5999999999999" y="154.27286356821591"/>
         </scene>
         <!--Breathing View Controller-->
         <scene sceneID="YNR-nS-Scw">
@@ -560,7 +568,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="1xm-oi-OaU"/>
         <segue reference="oog-nE-P5h"/>
-        <segue reference="EIb-4B-A2V"/>
+        <segue reference="hvU-cP-C17"/>
         <segue reference="5aH-Ok-vxE"/>
     </inferredMetricsTieBreakers>
 </document>

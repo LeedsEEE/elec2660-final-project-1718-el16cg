@@ -41,6 +41,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *lineNeg75;
 @property (weak, nonatomic) IBOutlet UIImageView *lineNeg90;
 
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
 @property NSInteger random;
 

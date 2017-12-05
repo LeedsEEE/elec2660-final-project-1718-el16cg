@@ -12,7 +12,13 @@
 
 @end
 
+
+
 @implementation LevellingViewController
+
+
+
+int score =0;
 float z =0.0;
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,7 +30,8 @@ float z =0.0;
         
         self.nextSectionImage.hidden= false;
         
-        
+        self.scoreLabel.text =[NSString stringWithFormat:@"%d ",score];
+ 
     }
     
     self.bar0.hidden= true;
@@ -93,7 +100,7 @@ float z =0.0;
     int zAngle=(self.random*15)-90;
     NSLog(@"random= %ld",self.random);
        NSLog(@"angle= %d",zAngle);
-    
+   
 #pragma mark -90
     if (zAngle==-90){
        
@@ -127,7 +134,11 @@ float z =0.0;
             self.lineNeg75.hidden= true;
             self.lineNeg90.hidden= true;
             
+            score++;
+            
             self.random = self.random;
+            
+            self.scoreLabel.text =[NSString stringWithFormat:@"%d ",score];
         }
         if (-70>=zActual && -80<=zActual){
             
@@ -387,6 +398,7 @@ float z =0.0;
                 self.lineNeg90.hidden= true;
                 
                 self.random = self.random;
+                self.scoreLabel.text =[NSString stringWithFormat:@"%d ",score];
             }      if (-55>=zActual && -60<=zActual){
                 
                 self.line0.hidden= true;
@@ -646,6 +658,8 @@ float z =0.0;
                     
                      self.random = self.random;
                     
+                    self.scoreLabel.text =[NSString stringWithFormat:@"%d ",score];
+                    
                 }      if (-40>=zActual && -50<=zActual){
                     
                     self.line0.hidden= true;
@@ -904,6 +918,7 @@ float z =0.0;
                         self.lineNeg90.hidden= true;
                         
                          self.random = self.random;
+                        self.scoreLabel.text =[NSString stringWithFormat:@"%d ",score];
                     }      if (-25>=zActual && -35<=zActual){
                         
                         self.line0.hidden= true;
@@ -1093,6 +1108,7 @@ float z =0.0;
                             self.lineNeg90.hidden= true;
                             
                             self.random = self.random;
+                            self.scoreLabel.text =[NSString stringWithFormat:@"%d ",score];
                         }
                         if (-70>=zActual && -80<=zActual){
                             
@@ -1162,6 +1178,7 @@ float z =0.0;
                             self.lineNeg90.hidden= true;
                             
                             self.random = self.random;
+                            self.scoreLabel.text =[NSString stringWithFormat:@"%d ",score];
                         }      if (-10>=zActual && -20<=zActual){
                             
                             self.line0.hidden= true;
@@ -1420,6 +1437,7 @@ float z =0.0;
                                 self.lineNeg90.hidden= true;
                                 
                                 self.random = self.random;
+                                self.scoreLabel.text =[NSString stringWithFormat:@"%d ",score];
                             }      if (5>=zActual && -5<=zActual){
                                 
                                 self.line0.hidden= false;
@@ -1678,6 +1696,7 @@ float z =0.0;
                                     self.lineNeg90.hidden= true;
                                     
                                     self.random = self.random;
+                                    self.scoreLabel.text =[NSString stringWithFormat:@"%d ",score];
                                 }      if (20>=zActual && 10<=zActual){
                                     
                                     self.line0.hidden= true;
@@ -1936,6 +1955,7 @@ float z =0.0;
                                         self.lineNeg90.hidden= true;
                                         
                                         self.random = self.random;
+                                        self.scoreLabel.text =[NSString stringWithFormat:@"%d ",score];
                                     }      if (35>=zActual && 25<=zActual){
                                         
                                         self.line0.hidden= true;
@@ -2194,6 +2214,7 @@ float z =0.0;
                                             self.lineNeg90.hidden= true;
                                             
                                         self.random = self.random;
+                                            self.scoreLabel.text =[NSString stringWithFormat:@"%d ",score];
                                         }      if (50>=zActual && 40<=zActual){
                                             
                                             self.line0.hidden= true;
@@ -2452,6 +2473,7 @@ float z =0.0;
                                                 self.lineNeg90.hidden= true;
                                                 
                                                  self.random = self.random;
+                                                self.scoreLabel.text =[NSString stringWithFormat:@"%d ",score];
                                             }      if (65>=zActual && 55<=zActual){
                                                 
                                                 self.line0.hidden= true;
@@ -2709,6 +2731,7 @@ float z =0.0;
                                                     self.lineNeg90.hidden= true;
                                                     
                                                     self.random = self.random;
+                                                    self.scoreLabel.text =[NSString stringWithFormat:@"%d ",score];
 
                                                 }      if  (80>=zActual && 70<=zActual){
                                                     
@@ -2968,6 +2991,7 @@ float z =0.0;
                                                         self.lineNeg90.hidden= true;
                                                         
                                                         self.random = self.random;
+                                                        self.scoreLabel.text =[NSString stringWithFormat:@"%d ",score];
                                                     }      if (95>=zActual && 85<=zActual){
                                                         
                                                         self.line0.hidden= true;
@@ -3226,6 +3250,7 @@ float z =0.0;
                                                             self.lineNeg90.hidden= true;
                                                             
                                                             self.random = self.random;
+                                                            self.scoreLabel.text =[NSString stringWithFormat:@"%d ",score];
                                                         }
                                                     }
   
