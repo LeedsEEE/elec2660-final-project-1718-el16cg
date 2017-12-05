@@ -10,6 +10,15 @@
 
 @implementation gyroscopeDataModel
 
+//https://wwwbruegge.in.tum.de/lehrstuhl_1/home/98-teaching/tutorials/505-sgd-ws13-tutorial-core-motion
+
+//gyroscope controls and core motion code used and adapted from the link above
+//4th December 2017
+
+
+
+
+
 -(void)startGyro{
     self.motionManager=[[CMMotionManager alloc] init];
     self.motionManager.deviceMotionUpdateInterval=1.0/60.0;

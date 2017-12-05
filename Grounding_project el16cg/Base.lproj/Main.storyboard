@@ -9,7 +9,7 @@
         <!--First-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -66,9 +66,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzr-sd-PBa">
-                                <frame key="frameInset" minX="72" minY="507" width="228" height="105"/>
+                                <frame key="frameInset" minX="73" minY="507" width="228" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Guided Grounding"/>
+                                <connections>
+                                    <action selector="guidedGroundingPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="l77-Rk-hou"/>
+                                    <segue destination="tyL-ff-CN9" kind="show" id="1al-W0-x8r"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -207,6 +211,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Next Section button.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PRl-VY-RCI">
+                                <frame key="frameInset" minX="237" minY="594" width="138" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCh-iF-F52">
+                                <frame key="frameInset" minX="237" minY="594" width="138" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="h6Q-nA-s3o" kind="show" id="OKv-O1-0d0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
@@ -227,6 +242,8 @@
                         <outlet property="answer7" destination="wv5-EU-SBW" id="bgZ-yi-E7C"/>
                         <outlet property="answer8" destination="maW-v5-0iB" id="vjG-Hd-eyD"/>
                         <outlet property="answer9" destination="W9h-wN-WiO" id="LcR-g2-ua9"/>
+                        <outlet property="nextSection" destination="HCh-iF-F52" id="wpH-bX-Gvr"/>
+                        <outlet property="nextSectionImage" destination="PRl-VY-RCI" id="Den-hT-Ue8"/>
                         <outlet property="submitPressed" destination="ysj-7j-EDK" id="wbl-UF-jYm"/>
                     </connections>
                 </viewController>
@@ -364,6 +381,17 @@
                                 <frame key="frameInset" minX="156" minY="367" width="7" height="224"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Next Section button.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1Oq-Bs-EQq">
+                                <frame key="frameInset" minX="237" minY="597" width="138" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kH2-U2-FvB">
+                                <frame key="frameInset" minX="237" minY="594" width="138" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="KRV-vN-eBU" kind="show" id="hvU-cP-C17"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -398,11 +426,13 @@
                         <outlet property="lineNeg60" destination="7rD-Bg-XmN" id="qcM-Dn-6wr"/>
                         <outlet property="lineNeg75" destination="PAu-Ps-9kH" id="CJy-tj-3XP"/>
                         <outlet property="lineNeg90" destination="47l-yR-XpZ" id="usl-H6-iao"/>
+                        <outlet property="nextSection" destination="kH2-U2-FvB" id="qX3-iG-fVP"/>
+                        <outlet property="nextSectionImage" destination="1Oq-Bs-EQq" id="HmU-oi-ndL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ee-5x-r9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1972" y="135.38230884557723"/>
+            <point key="canvasLocation" x="2023" y="155"/>
         </scene>
         <!--Breathing View Controller-->
         <scene sceneID="YNR-nS-Scw">
@@ -450,6 +480,17 @@
                                 <frame key="frameInset" minX="17" minY="136" width="343" height="387"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Next Section button.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="x2O-wa-PqW">
+                                <frame key="frameInset" minX="237" minY="597" width="138" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teO-ez-ecd">
+                                <frame key="frameInset" minX="237" minY="596" width="138" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="9pv-A4-QxB" kind="show" id="oog-nE-P5h"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -460,6 +501,8 @@
                         <outlet property="circlesMedium" destination="fJP-A4-CcG" id="A8W-vK-b9F"/>
                         <outlet property="circlesSmall" destination="W4z-PK-shV" id="jXO-iL-8d4"/>
                         <outlet property="circlesSmallest" destination="Xa6-ZA-vVq" id="9qL-Ns-Pxf"/>
+                        <outlet property="nextSection" destination="teO-ez-ecd" id="QCE-gA-UIp"/>
+                        <outlet property="nextSectionImage" destination="x2O-wa-PqW" id="g4n-Fa-Hlf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tp1-22-fLZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -486,6 +529,7 @@
     <resources>
         <image name="Button.jpeg" width="121" height="62"/>
         <image name="Circle.png" width="151" height="152"/>
+        <image name="Next Section button.jpg" width="121" height="62"/>
         <image name="bars -15Degrees.jpg" width="539" height="192"/>
         <image name="bars -30Degrees.jpg" width="500" height="320"/>
         <image name="bars -45Degrees.jpg" width="428" height="429"/>
@@ -513,4 +557,10 @@
         <image name="lineNeg75.jpg" width="57" height="205"/>
         <image name="right-speaker-with-three-sound-waves.png" width="256" height="256"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="1xm-oi-OaU"/>
+        <segue reference="oog-nE-P5h"/>
+        <segue reference="EIb-4B-A2V"/>
+        <segue reference="5aH-Ok-vxE"/>
+    </inferredMetricsTieBreakers>
 </document>

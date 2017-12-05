@@ -17,7 +17,15 @@ float z =0.0;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-   
+    self.nextSectionImage.hidden= true;
+    
+    if (self.home.guidedGroundingEnabled ==1) {
+        
+        
+        self.nextSectionImage.hidden= false;
+        
+        
+    }
     
     self.bar0.hidden= true;
     self.bar15.hidden= true;
@@ -52,8 +60,9 @@ float z =0.0;
 }
 -(void) randomNumber{
     
-    self.random= arc4random_uniform(12);
-    
+    self.random= arc4random() % 12;
+    nil;
+   
     
 }
 - (void) viewDidDisappear:(BOOL)animated{
@@ -80,8 +89,11 @@ float z =0.0;
     self.gyro.startGyro;
     
     float zActual= self.gyro.updateData;
-    
+    [self randomNumber];
     int zAngle=(self.random*15)-90;
+    NSLog(@"random= %ld",self.random);
+       NSLog(@"angle= %d",zAngle);
+    
 #pragma mark -90
     if (zAngle==-90){
        
@@ -99,7 +111,7 @@ float z =0.0;
         self.barNeg75.hidden= true;
         self.barNeg90.hidden= false;
         
-        if (-85>=zActual>=-95){
+        if (-85>=zActual && -95<=zActual){
         
             self.line0.hidden= true;
             self.line15.hidden= true;
@@ -117,7 +129,7 @@ float z =0.0;
             
             self.random = self.random;
         }
-        if (-70>=zActual>=-80){
+        if (-70>=zActual && -80<=zActual){
             
             self.line0.hidden= true;
             self.line15.hidden= true;
@@ -134,7 +146,7 @@ float z =0.0;
             self.lineNeg90.hidden= true;
             
             
-        }      if (-55>=zActual>=-65){
+        }      if (-55>=zActual && -60<=zActual){
             
             self.line0.hidden= true;
             self.line15.hidden= true;
@@ -151,7 +163,7 @@ float z =0.0;
             self.lineNeg90.hidden= true;
             
             
-        }      if (-40>=zActual>=-50){
+        }      if (-40>=zActual && -50<=zActual){
             
             self.line0.hidden= true;
             self.line15.hidden= true;
@@ -168,7 +180,7 @@ float z =0.0;
             self.lineNeg90.hidden= true;
             
             
-        }      if (-25>=zActual>=-35){
+        }      if (-25>=zActual && -35<=zActual){
             
             self.line0.hidden= true;
             self.line15.hidden= true;
@@ -185,7 +197,7 @@ float z =0.0;
             self.lineNeg90.hidden= true;
             
             
-        }      if (-10>=zActual>=-20){
+        }      if (-10>=zActual && -20<=zActual){
             
             self.line0.hidden= true;
             self.line15.hidden= true;
@@ -202,7 +214,7 @@ float z =0.0;
             self.lineNeg90.hidden= true;
             
             
-        }      if (5>=zActual>=-5){
+        }      if (5>=zActual && -5<=zActual){
             
             self.line0.hidden= false;
             self.line15.hidden= true;
@@ -219,7 +231,7 @@ float z =0.0;
             self.lineNeg90.hidden= true;
             
             
-        }      if (20>=zActual>=10){
+        }      if (20>=zActual && 10<=zActual){
             
             self.line0.hidden= true;
             self.line15.hidden= false;
@@ -236,7 +248,7 @@ float z =0.0;
             self.lineNeg90.hidden= true;
             
             
-        }      if (35>=zActual>=25){
+        }      if (35>=zActual && 25<=zActual){
             
             self.line0.hidden= true;
             self.line15.hidden= true;
@@ -253,7 +265,7 @@ float z =0.0;
             self.lineNeg90.hidden= true;
             
             
-        }      if (50>=zActual>=40){
+        }      if (50>=zActual && 40<=zActual){
             
             self.line0.hidden= true;
             self.line15.hidden= true;
@@ -270,7 +282,7 @@ float z =0.0;
             self.lineNeg90.hidden= true;
             
             
-        }      if (65>=zActual>=55){
+        }      if (65>=zActual && 55<=zActual){
             
             self.line0.hidden= true;
             self.line15.hidden= true;
@@ -287,7 +299,7 @@ float z =0.0;
             self.lineNeg90.hidden= true;
             
             
-        }      if  (80>=zActual>=70){
+        }      if  (80>=zActual && 70<=zActual){
             
             self.line0.hidden= true;
             self.line15.hidden= true;
@@ -304,7 +316,7 @@ float z =0.0;
             self.lineNeg90.hidden= true;
             
             
-        }      if (95>=zActual>=85){
+        }      if (95>=zActual && 85<=zActual){
             
             self.line0.hidden= true;
             self.line15.hidden= true;
@@ -322,6 +334,7 @@ float z =0.0;
             
             
         }
+    }
 #pragma mark -75
         if (zAngle==-75){
             
@@ -339,7 +352,7 @@ float z =0.0;
             self.barNeg75.hidden= false;
             self.barNeg90.hidden= true;
             
-            if (-85>=zActual>=-95){
+            if (-85>=zActual && -95<=zActual){
                 
                 self.line0.hidden= true;
                 self.line15.hidden= true;
@@ -357,7 +370,7 @@ float z =0.0;
                 
                 
             }
-            if (-70>=zActual>=-80){
+            if (-70>=zActual && -80<=zActual){
                 
                 self.line0.hidden= true;
                 self.line15.hidden= true;
@@ -374,7 +387,7 @@ float z =0.0;
                 self.lineNeg90.hidden= true;
                 
                 self.random = self.random;
-            }      if (-55>=zActual>=-65){
+            }      if (-55>=zActual && -60<=zActual){
                 
                 self.line0.hidden= true;
                 self.line15.hidden= true;
@@ -391,7 +404,7 @@ float z =0.0;
                 self.lineNeg90.hidden= true;
                 
                 
-            }      if (-40>=zActual>=-50){
+            }      if (-40>=zActual && -50<=zActual){
                 
                 self.line0.hidden= true;
                 self.line15.hidden= true;
@@ -408,7 +421,7 @@ float z =0.0;
                 self.lineNeg90.hidden= true;
                 
                 
-            }      if (-25>=zActual>=-35){
+            }      if (-25>=zActual && -35<=zActual){
                 
                 self.line0.hidden= true;
                 self.line15.hidden= true;
@@ -425,7 +438,7 @@ float z =0.0;
                 self.lineNeg90.hidden= true;
                 
                 
-            }      if (-10>=zActual>=-20){
+            }      if (-10>=zActual && -20<=zActual){
                 
                 self.line0.hidden= true;
                 self.line15.hidden= true;
@@ -442,7 +455,7 @@ float z =0.0;
                 self.lineNeg90.hidden= true;
                 
                 
-            }      if (5>=zActual>=-5){
+            }      if (5>=zActual && -5<=zActual){
                 
                 self.line0.hidden= false;
                 self.line15.hidden= true;
@@ -459,7 +472,7 @@ float z =0.0;
                 self.lineNeg90.hidden= true;
                 
                 
-            }      if (20>=zActual>=10){
+            }      if (20>=zActual && 10<=zActual){
                 
                 self.line0.hidden= true;
                 self.line15.hidden= false;
@@ -476,7 +489,7 @@ float z =0.0;
                 self.lineNeg90.hidden= true;
                 
                 
-            }      if (35>=zActual>=25){
+            }      if (35>=zActual && 25<=zActual){
                 
                 self.line0.hidden= true;
                 self.line15.hidden= true;
@@ -493,7 +506,7 @@ float z =0.0;
                 self.lineNeg90.hidden= true;
                 
                 
-            }      if (50>=zActual>=40){
+            }      if (50>=zActual && 40<=zActual){
                 
                 self.line0.hidden= true;
                 self.line15.hidden= true;
@@ -510,7 +523,7 @@ float z =0.0;
                 self.lineNeg90.hidden= true;
                 
                 
-            }      if (65>=zActual>=55){
+            }      if (65>=zActual && 55<=zActual){
                 
                 self.line0.hidden= true;
                 self.line15.hidden= true;
@@ -527,7 +540,7 @@ float z =0.0;
                 self.lineNeg90.hidden= true;
                 
                 
-            }      if  (80>=zActual>=70){
+            }      if  (80>=zActual && 70<=zActual){
                 
                 self.line0.hidden= true;
                 self.line15.hidden= true;
@@ -544,7 +557,7 @@ float z =0.0;
                 self.lineNeg90.hidden= true;
                 
                 
-            }      if (95>=zActual>=85){
+            }      if (95>=zActual && 85<=zActual){
                 
                 self.line0.hidden= true;
                 self.line15.hidden= true;
@@ -562,6 +575,7 @@ float z =0.0;
                 
                 
             }
+        }
 #pragma mark -60
             if (zAngle==-60){
                 
@@ -579,7 +593,7 @@ float z =0.0;
                 self.barNeg75.hidden= true;
                 self.barNeg90.hidden= false;
                 
-                if (-85>=zActual>=-95){
+                if (-85>=zActual && -95<=zActual){
                     
                     self.line0.hidden= true;
                     self.line15.hidden= true;
@@ -597,7 +611,7 @@ float z =0.0;
                     
                    
                 }
-                if (-70>=zActual>=-80){
+                if (-70>=zActual && -80<=zActual){
                     
                     self.line0.hidden= true;
                     self.line15.hidden= true;
@@ -614,7 +628,7 @@ float z =0.0;
                     self.lineNeg90.hidden= true;
                     
                     
-                }      if (-55>=zActual>=-65){
+                }      if (-55>=zActual && -60<=zActual){
                     
                     self.line0.hidden= true;
                     self.line15.hidden= true;
@@ -632,7 +646,7 @@ float z =0.0;
                     
                      self.random = self.random;
                     
-                }      if (-40>=zActual>=-50){
+                }      if (-40>=zActual && -50<=zActual){
                     
                     self.line0.hidden= true;
                     self.line15.hidden= true;
@@ -649,7 +663,7 @@ float z =0.0;
                     self.lineNeg90.hidden= true;
                     
                     
-                }      if (-25>=zActual>=-35){
+                }      if (-25>=zActual && -35<=zActual){
                     
                     self.line0.hidden= true;
                     self.line15.hidden= true;
@@ -666,7 +680,7 @@ float z =0.0;
                     self.lineNeg90.hidden= true;
                     
                     
-                }      if (-10>=zActual>=-20){
+                }      if (-10>=zActual && -20<=zActual){
                     
                     self.line0.hidden= true;
                     self.line15.hidden= true;
@@ -683,7 +697,7 @@ float z =0.0;
                     self.lineNeg90.hidden= true;
                     
                     
-                }      if (5>=zActual>=-5){
+                }      if (5>=zActual && -5<=zActual){
                     
                     self.line0.hidden= false;
                     self.line15.hidden= true;
@@ -700,7 +714,7 @@ float z =0.0;
                     self.lineNeg90.hidden= true;
                     
                     
-                }      if (20>=zActual>=10){
+                }      if (20>=zActual && 10<=zActual){
                     
                     self.line0.hidden= true;
                     self.line15.hidden= false;
@@ -717,7 +731,7 @@ float z =0.0;
                     self.lineNeg90.hidden= true;
                     
                     
-                }      if (35>=zActual>=25){
+                }      if (35>=zActual && 25<=zActual){
                     
                     self.line0.hidden= true;
                     self.line15.hidden= true;
@@ -734,7 +748,7 @@ float z =0.0;
                     self.lineNeg90.hidden= true;
                     
                     
-                }      if (50>=zActual>=40){
+                }      if (50>=zActual && 40<=zActual){
                     
                     self.line0.hidden= true;
                     self.line15.hidden= true;
@@ -751,7 +765,7 @@ float z =0.0;
                     self.lineNeg90.hidden= true;
                     
                     
-                }      if (65>=zActual>=55){
+                }      if (65>=zActual && 55<=zActual){
                     
                     self.line0.hidden= true;
                     self.line15.hidden= true;
@@ -768,7 +782,7 @@ float z =0.0;
                     self.lineNeg90.hidden= true;
                     
                     
-                }      if  (80>=zActual>=70){
+                }      if  (80>=zActual && 70<=zActual){
                     
                     self.line0.hidden= true;
                     self.line15.hidden= true;
@@ -785,7 +799,7 @@ float z =0.0;
                     self.lineNeg90.hidden= true;
                     
                     
-                }      if (95>=zActual>=85){
+                }      if (95>=zActual && 85<=zActual){
                     
                     self.line0.hidden= true;
                     self.line15.hidden= true;
@@ -803,6 +817,7 @@ float z =0.0;
                     
                     
                 }
+            }
 #pragma mark -45
                 if (zAngle==-45){
                     
@@ -820,7 +835,7 @@ float z =0.0;
                     self.barNeg75.hidden= true;
                     self.barNeg90.hidden= true;
                     
-                    if (-85>=zActual>=-95){
+                    if (-85>=zActual && -95<=zActual){
                         
                         self.line0.hidden= true;
                         self.line15.hidden= true;
@@ -838,7 +853,7 @@ float z =0.0;
                         
                        
                     }
-                    if (-70>=zActual>=-80){
+                    if (-70>=zActual && -80<=zActual){
                         
                         self.line0.hidden= true;
                         self.line15.hidden= true;
@@ -855,7 +870,7 @@ float z =0.0;
                         self.lineNeg90.hidden= true;
                         
                         
-                    }      if (-55>=zActual>=-65){
+                    }      if (-55>=zActual && -60<=zActual){
                         
                         self.line0.hidden= true;
                         self.line15.hidden= true;
@@ -872,7 +887,7 @@ float z =0.0;
                         self.lineNeg90.hidden= true;
                         
                         
-                    }      if (-40>=zActual>=-50){
+                    }      if (-40>=zActual && -50<=zActual){
                         
                         self.line0.hidden= true;
                         self.line15.hidden= true;
@@ -889,7 +904,7 @@ float z =0.0;
                         self.lineNeg90.hidden= true;
                         
                          self.random = self.random;
-                    }      if (-25>=zActual>=-35){
+                    }      if (-25>=zActual && -35<=zActual){
                         
                         self.line0.hidden= true;
                         self.line15.hidden= true;
@@ -906,7 +921,7 @@ float z =0.0;
                         self.lineNeg90.hidden= true;
                         
                         
-                    }      if (-10>=zActual>=-20){
+                    }      if (-10>=zActual && -20<=zActual){
                         
                         self.line0.hidden= true;
                         self.line15.hidden= true;
@@ -923,7 +938,7 @@ float z =0.0;
                         self.lineNeg90.hidden= true;
                         
                         
-                    }      if (5>=zActual>=-5){
+                    }      if (5>=zActual && -5<=zActual){
                         
                         self.line0.hidden= false;
                         self.line15.hidden= true;
@@ -940,7 +955,7 @@ float z =0.0;
                         self.lineNeg90.hidden= true;
                         
                         
-                    }      if (20>=zActual>=10){
+                    }      if (20>=zActual && 10<=zActual){
                         
                         self.line0.hidden= true;
                         self.line15.hidden= false;
@@ -957,7 +972,7 @@ float z =0.0;
                         self.lineNeg90.hidden= true;
                         
                         
-                    }      if (35>=zActual>=25){
+                    }      if (35>=zActual && 25<=zActual){
                         
                         self.line0.hidden= true;
                         self.line15.hidden= true;
@@ -974,7 +989,7 @@ float z =0.0;
                         self.lineNeg90.hidden= true;
                         
                         
-                    }      if (50>=zActual>=40){
+                    }      if (50>=zActual && 40<=zActual){
                         
                         self.line0.hidden= true;
                         self.line15.hidden= true;
@@ -991,7 +1006,7 @@ float z =0.0;
                         self.lineNeg90.hidden= true;
                         
                         
-                    }      if (65>=zActual>=55){
+                    }      if (65>=zActual && 55<=zActual){
                         
                         self.line0.hidden= true;
                         self.line15.hidden= true;
@@ -1008,7 +1023,7 @@ float z =0.0;
                         self.lineNeg90.hidden= true;
                         
                         
-                    }      if  (80>=zActual>=70){
+                    }      if  (80>=zActual && 70<=zActual){
                         
                         self.line0.hidden= true;
                         self.line15.hidden= true;
@@ -1025,7 +1040,7 @@ float z =0.0;
                         self.lineNeg90.hidden= true;
                         
                         
-                    }      if (95>=zActual>=85){
+                    }      if (95>=zActual && 85<=zActual){
                         
                         self.line0.hidden= true;
                         self.line15.hidden= true;
@@ -1043,6 +1058,7 @@ float z =0.0;
                         
                         
                     }
+                }
 #pragma mark -30
                     if (zAngle==-30){
                         
@@ -1060,7 +1076,7 @@ float z =0.0;
                         self.barNeg75.hidden= true;
                         self.barNeg90.hidden= true;
                         
-                        if (-85>=zActual>=-95){
+                        if (-85>=zActual && -95<=zActual){
                             
                             self.line0.hidden= true;
                             self.line15.hidden= true;
@@ -1078,7 +1094,7 @@ float z =0.0;
                             
                             self.random = self.random;
                         }
-                        if (-70>=zActual>=-80){
+                        if (-70>=zActual && -80<=zActual){
                             
                             self.line0.hidden= true;
                             self.line15.hidden= true;
@@ -1095,7 +1111,7 @@ float z =0.0;
                             self.lineNeg90.hidden= true;
                             
                             
-                        }      if (-55>=zActual>=-65){
+                        }      if (-55>=zActual && -60<=zActual){
                             
                             self.line0.hidden= true;
                             self.line15.hidden= true;
@@ -1112,7 +1128,7 @@ float z =0.0;
                             self.lineNeg90.hidden= true;
                             
                             
-                        }      if (-40>=zActual>=-50){
+                        }      if (-40>=zActual && -50<=zActual){
                             
                             self.line0.hidden= true;
                             self.line15.hidden= true;
@@ -1129,7 +1145,7 @@ float z =0.0;
                             self.lineNeg90.hidden= true;
                             
                             
-                        }      if (-25>=zActual>=-35){
+                        }      if (-25>=zActual && -35<=zActual){
                             
                             self.line0.hidden= true;
                             self.line15.hidden= true;
@@ -1146,7 +1162,7 @@ float z =0.0;
                             self.lineNeg90.hidden= true;
                             
                             self.random = self.random;
-                        }      if (-10>=zActual>=-20){
+                        }      if (-10>=zActual && -20<=zActual){
                             
                             self.line0.hidden= true;
                             self.line15.hidden= true;
@@ -1163,7 +1179,7 @@ float z =0.0;
                             self.lineNeg90.hidden= true;
                             
                             
-                        }      if (5>=zActual>=-5){
+                        }      if (5>=zActual && -5<=zActual){
                             
                             self.line0.hidden= false;
                             self.line15.hidden= true;
@@ -1180,7 +1196,7 @@ float z =0.0;
                             self.lineNeg90.hidden= true;
                             
                             
-                        }      if (20>=zActual>=10){
+                        }      if (20>=zActual && 10<=zActual){
                             
                             self.line0.hidden= true;
                             self.line15.hidden= false;
@@ -1197,7 +1213,7 @@ float z =0.0;
                             self.lineNeg90.hidden= true;
                             
                             
-                        }      if (35>=zActual>=25){
+                        }      if (35>=zActual && 25<=zActual){
                             
                             self.line0.hidden= true;
                             self.line15.hidden= true;
@@ -1214,7 +1230,7 @@ float z =0.0;
                             self.lineNeg90.hidden= true;
                             
                             
-                        }      if (50>=zActual>=40){
+                        }      if (50>=zActual && 40<=zActual){
                             
                             self.line0.hidden= true;
                             self.line15.hidden= true;
@@ -1231,7 +1247,7 @@ float z =0.0;
                             self.lineNeg90.hidden= true;
                             
                             
-                        }      if (65>=zActual>=55){
+                        }      if (65>=zActual && 55<=zActual){
                             
                             self.line0.hidden= true;
                             self.line15.hidden= true;
@@ -1248,7 +1264,7 @@ float z =0.0;
                             self.lineNeg90.hidden= true;
                             
                             
-                        }      if  (80>=zActual>=70){
+                        }      if  (80>=zActual && 70<=zActual){
                             
                             self.line0.hidden= true;
                             self.line15.hidden= true;
@@ -1265,7 +1281,7 @@ float z =0.0;
                             self.lineNeg90.hidden= true;
                             
                             
-                        }      if (95>=zActual>=85){
+                        }      if (95>=zActual && 85<=zActual){
                             
                             self.line0.hidden= true;
                             self.line15.hidden= true;
@@ -1283,6 +1299,7 @@ float z =0.0;
                             
                             
                         }
+                    }
 #pragma mark -15
                         if (zAngle==-15){
                             
@@ -1300,7 +1317,7 @@ float z =0.0;
                             self.barNeg75.hidden= true;
                             self.barNeg90.hidden= true;
                             
-                            if (-85>=zActual>=-95){
+                            if (-85>=zActual && -95<=zActual){
                                 
                                 self.line0.hidden= true;
                                 self.line15.hidden= true;
@@ -1318,7 +1335,7 @@ float z =0.0;
                                 
                                 
                             }
-                            if (-70>=zActual>=-80){
+                            if (-70>=zActual && -80<=zActual){
                                 
                                 self.line0.hidden= true;
                                 self.line15.hidden= true;
@@ -1335,7 +1352,7 @@ float z =0.0;
                                 self.lineNeg90.hidden= true;
                                 
                                 
-                            }      if (-55>=zActual>=-65){
+                            }      if (-55>=zActual && -60<=zActual){
                                 
                                 self.line0.hidden= true;
                                 self.line15.hidden= true;
@@ -1352,7 +1369,7 @@ float z =0.0;
                                 self.lineNeg90.hidden= true;
                                 
                                 
-                            }      if (-40>=zActual>=-50){
+                            }      if (-40>=zActual && -50<=zActual){
                                 
                                 self.line0.hidden= true;
                                 self.line15.hidden= true;
@@ -1369,7 +1386,7 @@ float z =0.0;
                                 self.lineNeg90.hidden= true;
                                 
                                 
-                            }      if (-25>=zActual>=-35){
+                            }      if (-25>=zActual && -35<=zActual){
                                 
                                 self.line0.hidden= true;
                                 self.line15.hidden= true;
@@ -1386,7 +1403,7 @@ float z =0.0;
                                 self.lineNeg90.hidden= true;
                                 
                                 
-                            }      if (-10>=zActual>=-20){
+                            }      if (-10>=zActual && -20<=zActual){
                                 
                                 self.line0.hidden= true;
                                 self.line15.hidden= true;
@@ -1403,7 +1420,7 @@ float z =0.0;
                                 self.lineNeg90.hidden= true;
                                 
                                 self.random = self.random;
-                            }      if (5>=zActual>=-5){
+                            }      if (5>=zActual && -5<=zActual){
                                 
                                 self.line0.hidden= false;
                                 self.line15.hidden= true;
@@ -1420,7 +1437,7 @@ float z =0.0;
                                 self.lineNeg90.hidden= true;
                                 
                                 
-                            }      if (20>=zActual>=10){
+                            }      if (20>=zActual && 10<=zActual){
                                 
                                 self.line0.hidden= true;
                                 self.line15.hidden= false;
@@ -1437,7 +1454,7 @@ float z =0.0;
                                 self.lineNeg90.hidden= true;
                                 
                                 
-                            }      if (35>=zActual>=25){
+                            }      if (35>=zActual && 25<=zActual){
                                 
                                 self.line0.hidden= true;
                                 self.line15.hidden= true;
@@ -1454,7 +1471,7 @@ float z =0.0;
                                 self.lineNeg90.hidden= true;
                                 
                                 
-                            }      if (50>=zActual>=40){
+                            }      if (50>=zActual && 40<=zActual){
                                 
                                 self.line0.hidden= true;
                                 self.line15.hidden= true;
@@ -1471,7 +1488,7 @@ float z =0.0;
                                 self.lineNeg90.hidden= true;
                                 
                                 
-                            }      if (65>=zActual>=55){
+                            }      if (65>=zActual && 55<=zActual){
                                 
                                 self.line0.hidden= true;
                                 self.line15.hidden= true;
@@ -1488,7 +1505,7 @@ float z =0.0;
                                 self.lineNeg90.hidden= true;
                                 
                                 
-                            }      if  (80>=zActual>=70){
+                            }      if  (80>=zActual && 70<=zActual){
                                 
                                 self.line0.hidden= true;
                                 self.line15.hidden= true;
@@ -1505,7 +1522,7 @@ float z =0.0;
                                 self.lineNeg90.hidden= true;
                                 
                                 
-                            }      if (95>=zActual>=85){
+                            }      if (95>=zActual && 85<=zActual){
                                 
                                 self.line0.hidden= true;
                                 self.line15.hidden= true;
@@ -1523,6 +1540,7 @@ float z =0.0;
                                 
                                 
                             }
+                        }
 #pragma mark 0
                             if (zAngle==0){
                                 
@@ -1540,7 +1558,7 @@ float z =0.0;
                                 self.barNeg75.hidden= true;
                                 self.barNeg90.hidden= true;
                                 
-                                if (-85>=zActual>=-95){
+                                if (-85>=zActual && -95<=zActual){
                                     
                                     self.line0.hidden= true;
                                     self.line15.hidden= true;
@@ -1558,7 +1576,7 @@ float z =0.0;
                                     
                                     
                                 }
-                                if (-70>=zActual>=-80){
+                                if (-70>=zActual && -80<=zActual){
                                     
                                     self.line0.hidden= true;
                                     self.line15.hidden= true;
@@ -1575,7 +1593,7 @@ float z =0.0;
                                     self.lineNeg90.hidden= true;
                                     
                                     
-                                }      if (-55>=zActual>=-65){
+                                }      if (-55>=zActual && -60<=zActual){
                                     
                                     self.line0.hidden= true;
                                     self.line15.hidden= true;
@@ -1592,7 +1610,7 @@ float z =0.0;
                                     self.lineNeg90.hidden= true;
                                     
                                     
-                                }      if (-40>=zActual>=-50){
+                                }      if (-40>=zActual && -50<=zActual){
                                     
                                     self.line0.hidden= true;
                                     self.line15.hidden= true;
@@ -1609,7 +1627,7 @@ float z =0.0;
                                     self.lineNeg90.hidden= true;
                                     
                                     
-                                }      if (-25>=zActual>=-35){
+                                }      if (-25>=zActual && -35<=zActual){
                                     
                                     self.line0.hidden= true;
                                     self.line15.hidden= true;
@@ -1626,7 +1644,7 @@ float z =0.0;
                                     self.lineNeg90.hidden= true;
                                     
                                     
-                                }      if (-10>=zActual>=-20){
+                                }      if (-10>=zActual && -20<=zActual){
                                     
                                     self.line0.hidden= true;
                                     self.line15.hidden= true;
@@ -1643,7 +1661,7 @@ float z =0.0;
                                     self.lineNeg90.hidden= true;
                                     
                                     
-                                }      if (5>=zActual>=-5){
+                                }      if (5>=zActual && -5<=zActual){
                                     
                                     self.line0.hidden= false;
                                     self.line15.hidden= true;
@@ -1660,7 +1678,7 @@ float z =0.0;
                                     self.lineNeg90.hidden= true;
                                     
                                     self.random = self.random;
-                                }      if (20>=zActual>=10){
+                                }      if (20>=zActual && 10<=zActual){
                                     
                                     self.line0.hidden= true;
                                     self.line15.hidden= false;
@@ -1677,7 +1695,7 @@ float z =0.0;
                                     self.lineNeg90.hidden= true;
                                     
                                     
-                                }      if (35>=zActual>=25){
+                                }      if (35>=zActual && 25<=zActual){
                                     
                                     self.line0.hidden= true;
                                     self.line15.hidden= true;
@@ -1694,7 +1712,7 @@ float z =0.0;
                                     self.lineNeg90.hidden= true;
                                     
                                     
-                                }      if (50>=zActual>=40){
+                                }      if (50>=zActual && 40<=zActual){
                                     
                                     self.line0.hidden= true;
                                     self.line15.hidden= true;
@@ -1711,7 +1729,7 @@ float z =0.0;
                                     self.lineNeg90.hidden= true;
                                     
                                     
-                                }      if (65>=zActual>=55){
+                                }      if (65>=zActual && 55<=zActual){
                                     
                                     self.line0.hidden= true;
                                     self.line15.hidden= true;
@@ -1728,7 +1746,7 @@ float z =0.0;
                                     self.lineNeg90.hidden= true;
                                     
                                     
-                                }      if  (80>=zActual>=70){
+                                }      if  (80>=zActual && 70<=zActual){
                                     
                                     self.line0.hidden= true;
                                     self.line15.hidden= true;
@@ -1745,7 +1763,7 @@ float z =0.0;
                                     self.lineNeg90.hidden= true;
                                     
                                     
-                                }      if (95>=zActual>=85){
+                                }      if (95>=zActual && 85<=zActual){
                                     
                                     self.line0.hidden= true;
                                     self.line15.hidden= true;
@@ -1763,6 +1781,7 @@ float z =0.0;
                                     
                                     
                                 }
+                            }
 #pragma mark 15
                                 if (zAngle==15){
                                     
@@ -1780,7 +1799,7 @@ float z =0.0;
                                     self.barNeg75.hidden= true;
                                     self.barNeg90.hidden= false;
                                     
-                                    if (-85>=zActual>=-95){
+                                    if (-85>=zActual && -95<=zActual){
                                         
                                         self.line0.hidden= true;
                                         self.line15.hidden= true;
@@ -1798,7 +1817,7 @@ float z =0.0;
                                         
                                         
                                     }
-                                    if (-70>=zActual>=-80){
+                                    if (-70>=zActual && -80<=zActual){
                                         
                                         self.line0.hidden= true;
                                         self.line15.hidden= true;
@@ -1815,7 +1834,7 @@ float z =0.0;
                                         self.lineNeg90.hidden= true;
                                         
                                         
-                                    }      if (-55>=zActual>=-65){
+                                    }      if (-55>=zActual && -60<=zActual){
                                         
                                         self.line0.hidden= true;
                                         self.line15.hidden= true;
@@ -1832,7 +1851,7 @@ float z =0.0;
                                         self.lineNeg90.hidden= true;
                                         
                                         
-                                    }      if (-40>=zActual>=-50){
+                                    }      if (-40>=zActual && -50<=zActual){
                                         
                                         self.line0.hidden= true;
                                         self.line15.hidden= true;
@@ -1849,7 +1868,7 @@ float z =0.0;
                                         self.lineNeg90.hidden= true;
                                         
                                         
-                                    }      if (-25>=zActual>=-35){
+                                    }      if (-25>=zActual && -35<=zActual){
                                         
                                         self.line0.hidden= true;
                                         self.line15.hidden= true;
@@ -1866,7 +1885,7 @@ float z =0.0;
                                         self.lineNeg90.hidden= true;
                                         
                                         
-                                    }      if (-10>=zActual>=-20){
+                                    }      if (-10>=zActual && -20<=zActual){
                                         
                                         self.line0.hidden= true;
                                         self.line15.hidden= true;
@@ -1883,7 +1902,7 @@ float z =0.0;
                                         self.lineNeg90.hidden= true;
                                         
                                         
-                                    }      if (5>=zActual>=-5){
+                                    }      if (5>=zActual && -5<=zActual){
                                         
                                         self.line0.hidden= false;
                                         self.line15.hidden= true;
@@ -1900,7 +1919,7 @@ float z =0.0;
                                         self.lineNeg90.hidden= true;
                                         
                                         
-                                    }      if (20>=zActual>=10){
+                                    }      if (20>=zActual && 10<=zActual){
                                         
                                         self.line0.hidden= true;
                                         self.line15.hidden= false;
@@ -1917,7 +1936,7 @@ float z =0.0;
                                         self.lineNeg90.hidden= true;
                                         
                                         self.random = self.random;
-                                    }      if (35>=zActual>=25){
+                                    }      if (35>=zActual && 25<=zActual){
                                         
                                         self.line0.hidden= true;
                                         self.line15.hidden= true;
@@ -1934,7 +1953,7 @@ float z =0.0;
                                         self.lineNeg90.hidden= true;
                                         
                                         
-                                    }      if (50>=zActual>=40){
+                                    }      if (50>=zActual && 40<=zActual){
                                         
                                         self.line0.hidden= true;
                                         self.line15.hidden= true;
@@ -1951,7 +1970,7 @@ float z =0.0;
                                         self.lineNeg90.hidden= true;
                                         
                                         
-                                    }      if (65>=zActual>=55){
+                                    }      if (65>=zActual && 55<=zActual){
                                         
                                         self.line0.hidden= true;
                                         self.line15.hidden= true;
@@ -1968,7 +1987,7 @@ float z =0.0;
                                         self.lineNeg90.hidden= true;
                                         
                                         
-                                    }      if  (80>=zActual>=70){
+                                    }      if  (80>=zActual && 70<=zActual){
                                         
                                         self.line0.hidden= true;
                                         self.line15.hidden= true;
@@ -1985,7 +2004,7 @@ float z =0.0;
                                         self.lineNeg90.hidden= true;
                                         
                                         
-                                    }      if (95>=zActual>=85){
+                                    }      if (95>=zActual && 85<=zActual){
                                         
                                         self.line0.hidden= true;
                                         self.line15.hidden= true;
@@ -2003,6 +2022,7 @@ float z =0.0;
                                         
                                         
                                     }
+                                }
 #pragma mark 30
                                     if (zAngle==30){
                                         
@@ -2020,7 +2040,7 @@ float z =0.0;
                                         self.barNeg75.hidden= true;
                                         self.barNeg90.hidden= true;
                                         
-                                        if (-85>=zActual>=-95){
+                                        if (-85>=zActual && -95<=zActual){
                                             
                                             self.line0.hidden= true;
                                             self.line15.hidden= true;
@@ -2038,7 +2058,7 @@ float z =0.0;
                                             
                                            
                                         }
-                                        if (-70>=zActual>=-80){
+                                        if (-70>=zActual && -80<=zActual){
                                             
                                             self.line0.hidden= true;
                                             self.line15.hidden= true;
@@ -2055,7 +2075,7 @@ float z =0.0;
                                             self.lineNeg90.hidden= true;
                                             
                                             
-                                        }      if (-55>=zActual>=-65){
+                                        }      if (-55>=zActual && -60<=zActual){
                                             
                                             self.line0.hidden= true;
                                             self.line15.hidden= true;
@@ -2072,7 +2092,7 @@ float z =0.0;
                                             self.lineNeg90.hidden= true;
                                             
                                             
-                                        }      if (-40>=zActual>=-50){
+                                        }      if (-40>=zActual && -50<=zActual){
                                             
                                             self.line0.hidden= true;
                                             self.line15.hidden= true;
@@ -2089,7 +2109,7 @@ float z =0.0;
                                             self.lineNeg90.hidden= true;
                                             
                                             
-                                        }      if (-25>=zActual>=-35){
+                                        }      if (-25>=zActual && -35<=zActual){
                                             
                                             self.line0.hidden= true;
                                             self.line15.hidden= true;
@@ -2106,7 +2126,7 @@ float z =0.0;
                                             self.lineNeg90.hidden= true;
                                             
                                             
-                                        }      if (-10>=zActual>=-20){
+                                        }      if (-10>=zActual && -20<=zActual){
                                             
                                             self.line0.hidden= true;
                                             self.line15.hidden= true;
@@ -2123,7 +2143,7 @@ float z =0.0;
                                             self.lineNeg90.hidden= true;
                                             
                                             
-                                        }      if (5>=zActual>=-5){
+                                        }      if (5>=zActual && -5<=zActual){
                                             
                                             self.line0.hidden= false;
                                             self.line15.hidden= true;
@@ -2140,7 +2160,7 @@ float z =0.0;
                                             self.lineNeg90.hidden= true;
                                             
                                             
-                                        }      if (20>=zActual>=10){
+                                        }      if (20>=zActual && 10<=zActual){
                                             
                                             self.line0.hidden= true;
                                             self.line15.hidden= false;
@@ -2157,7 +2177,7 @@ float z =0.0;
                                             self.lineNeg90.hidden= true;
                                             
                                             
-                                        }      if (35>=zActual>=25){
+                                        }      if (35>=zActual && 25<=zActual){
                                             
                                             self.line0.hidden= true;
                                             self.line15.hidden= true;
@@ -2174,7 +2194,7 @@ float z =0.0;
                                             self.lineNeg90.hidden= true;
                                             
                                         self.random = self.random;
-                                        }      if (50>=zActual>=40){
+                                        }      if (50>=zActual && 40<=zActual){
                                             
                                             self.line0.hidden= true;
                                             self.line15.hidden= true;
@@ -2191,7 +2211,7 @@ float z =0.0;
                                             self.lineNeg90.hidden= true;
                                             
                                             
-                                        }      if (65>=zActual>=55){
+                                        }      if (65>=zActual && 55<=zActual){
                                             
                                             self.line0.hidden= true;
                                             self.line15.hidden= true;
@@ -2208,7 +2228,7 @@ float z =0.0;
                                             self.lineNeg90.hidden= true;
                                             
                                             
-                                        }      if  (80>=zActual>=70){
+                                        }      if  (80>=zActual && 70<=zActual){
                                             
                                             self.line0.hidden= true;
                                             self.line15.hidden= true;
@@ -2225,7 +2245,7 @@ float z =0.0;
                                             self.lineNeg90.hidden= true;
                                             
                                             
-                                        }      if (95>=zActual>=85){
+                                        }      if (95>=zActual && 85<=zActual){
                                             
                                             self.line0.hidden= true;
                                             self.line15.hidden= true;
@@ -2243,6 +2263,7 @@ float z =0.0;
                                             
                                             
                                         }
+                                    }
 #pragma mark 45
                                         if (zAngle==45){
                                             
@@ -2260,7 +2281,7 @@ float z =0.0;
                                             self.barNeg75.hidden= true;
                                             self.barNeg90.hidden= true;
                                             
-                                            if (-85>=zActual>=-95){
+                                            if (-85>=zActual && -95<=zActual){
                                                 
                                                 self.line0.hidden= true;
                                                 self.line15.hidden= true;
@@ -2278,7 +2299,7 @@ float z =0.0;
                                                 
                                                
                                             }
-                                            if (-70>=zActual>=-80){
+                                            if (-70>=zActual && -80<=zActual){
                                                 
                                                 self.line0.hidden= true;
                                                 self.line15.hidden= true;
@@ -2295,7 +2316,7 @@ float z =0.0;
                                                 self.lineNeg90.hidden= true;
                                                 
                                                 
-                                            }      if (-55>=zActual>=-65){
+                                            }      if (-55>=zActual && -60<=zActual){
                                                 
                                                 self.line0.hidden= true;
                                                 self.line15.hidden= true;
@@ -2312,7 +2333,7 @@ float z =0.0;
                                                 self.lineNeg90.hidden= true;
                                                 
                                                 
-                                            }      if (-40>=zActual>=-50){
+                                            }      if (-40>=zActual && -50<=zActual){
                                                 
                                                 self.line0.hidden= true;
                                                 self.line15.hidden= true;
@@ -2329,7 +2350,7 @@ float z =0.0;
                                                 self.lineNeg90.hidden= true;
                                                 
                                                 
-                                            }      if (-25>=zActual>=-35){
+                                            }      if (-25>=zActual && -35<=zActual){
                                                 
                                                 self.line0.hidden= true;
                                                 self.line15.hidden= true;
@@ -2346,7 +2367,7 @@ float z =0.0;
                                                 self.lineNeg90.hidden= true;
                                                 
                                                 
-                                            }      if (-10>=zActual>=-20){
+                                            }      if (-10>=zActual && -20<=zActual){
                                                 
                                                 self.line0.hidden= true;
                                                 self.line15.hidden= true;
@@ -2363,7 +2384,7 @@ float z =0.0;
                                                 self.lineNeg90.hidden= true;
                                                 
                                                 
-                                            }      if (5>=zActual>=-5){
+                                            }      if (5>=zActual && -5<=zActual){
                                                 
                                                 self.line0.hidden= false;
                                                 self.line15.hidden= true;
@@ -2380,7 +2401,7 @@ float z =0.0;
                                                 self.lineNeg90.hidden= true;
                                                 
                                                 
-                                            }      if (20>=zActual>=10){
+                                            }      if (20>=zActual && 10<=zActual){
                                                 
                                                 self.line0.hidden= true;
                                                 self.line15.hidden= false;
@@ -2397,7 +2418,7 @@ float z =0.0;
                                                 self.lineNeg90.hidden= true;
                                                 
                                                 
-                                            }      if (35>=zActual>=25){
+                                            }      if (35>=zActual && 25<=zActual){
                                                 
                                                 self.line0.hidden= true;
                                                 self.line15.hidden= true;
@@ -2414,7 +2435,7 @@ float z =0.0;
                                                 self.lineNeg90.hidden= true;
                                                 
                                                 
-                                            }      if (50>=zActual>=40){
+                                            }      if (50>=zActual && 40<=zActual){
                                                 
                                                 self.line0.hidden= true;
                                                 self.line15.hidden= true;
@@ -2431,7 +2452,7 @@ float z =0.0;
                                                 self.lineNeg90.hidden= true;
                                                 
                                                  self.random = self.random;
-                                            }      if (65>=zActual>=55){
+                                            }      if (65>=zActual && 55<=zActual){
                                                 
                                                 self.line0.hidden= true;
                                                 self.line15.hidden= true;
@@ -2448,7 +2469,7 @@ float z =0.0;
                                                 self.lineNeg90.hidden= true;
                                                 
                                                 
-                                            }      if  (80>=zActual>=70){
+                                            }      if  (80>=zActual && 70<=zActual){
                                                 
                                                 self.line0.hidden= true;
                                                 self.line15.hidden= true;
@@ -2465,7 +2486,7 @@ float z =0.0;
                                                 self.lineNeg90.hidden= true;
                                                 
                                                 
-                                            }      if (95>=zActual>=85){
+                                            }      if (95>=zActual && 85<=zActual){
                                                 
                                                 self.line0.hidden= true;
                                                 self.line15.hidden= true;
@@ -2483,6 +2504,7 @@ float z =0.0;
                                                 
                                                 
                                             }
+                                        }
 #pragma mark 60
                                             if (zAngle==60){
                                                 
@@ -2500,7 +2522,7 @@ float z =0.0;
                                                 self.barNeg75.hidden= true;
                                                 self.barNeg90.hidden= true;
                                                 
-                                                if (-85>=zActual>=-95){
+                                                if (-85>=zActual && -95<=zActual){
                                                     
                                                     self.line0.hidden= true;
                                                     self.line15.hidden= true;
@@ -2517,7 +2539,7 @@ float z =0.0;
                                                     self.lineNeg90.hidden= true;
                                                     
                                                                                                    }
-                                                if (-70>=zActual>=-80){
+                                                if (-70>=zActual && -80<=zActual){
                                                     
                                                     self.line0.hidden= true;
                                                     self.line15.hidden= true;
@@ -2534,7 +2556,7 @@ float z =0.0;
                                                     self.lineNeg90.hidden= true;
                                                     
                                                     
-                                                }      if (-55>=zActual>=-65){
+                                                }      if (-55>=zActual && -60<=zActual){
                                                     
                                                     self.line0.hidden= true;
                                                     self.line15.hidden= true;
@@ -2551,7 +2573,7 @@ float z =0.0;
                                                     self.lineNeg90.hidden= true;
                                                     
                                                     
-                                                }      if (-40>=zActual>=-50){
+                                                }      if (-40>=zActual && -50<=zActual){
                                                     
                                                     self.line0.hidden= true;
                                                     self.line15.hidden= true;
@@ -2568,7 +2590,7 @@ float z =0.0;
                                                     self.lineNeg90.hidden= true;
                                                     
                                                     
-                                                }      if (-25>=zActual>=-35){
+                                                }      if (-25>=zActual && -35<=zActual){
                                                     
                                                     self.line0.hidden= true;
                                                     self.line15.hidden= true;
@@ -2585,7 +2607,7 @@ float z =0.0;
                                                     self.lineNeg90.hidden= true;
                                                     
                                                     
-                                                }      if (-10>=zActual>=-20){
+                                                }      if (-10>=zActual && -20<=zActual){
                                                     
                                                     self.line0.hidden= true;
                                                     self.line15.hidden= true;
@@ -2602,7 +2624,7 @@ float z =0.0;
                                                     self.lineNeg90.hidden= true;
                                                     
                                                     
-                                                }      if (5>=zActual>=-5){
+                                                }      if (5>=zActual && -5<=zActual){
                                                     
                                                     self.line0.hidden= false;
                                                     self.line15.hidden= true;
@@ -2619,7 +2641,7 @@ float z =0.0;
                                                     self.lineNeg90.hidden= true;
                                                     
                                                     
-                                                }      if (20>=zActual>=10){
+                                                }      if (20>=zActual && 10<=zActual){
                                                     
                                                     self.line0.hidden= true;
                                                     self.line15.hidden= false;
@@ -2636,7 +2658,7 @@ float z =0.0;
                                                     self.lineNeg90.hidden= true;
                                                     
                                                     
-                                                }      if (35>=zActual>=25){
+                                                }      if (35>=zActual && 25<=zActual){
                                                     
                                                     self.line0.hidden= true;
                                                     self.line15.hidden= true;
@@ -2653,7 +2675,7 @@ float z =0.0;
                                                     self.lineNeg90.hidden= true;
                                                     
                                                     
-                                                }      if (50>=zActual>=40){
+                                                }      if (50>=zActual && 40<=zActual){
                                                     
                                                     self.line0.hidden= true;
                                                     self.line15.hidden= true;
@@ -2670,7 +2692,7 @@ float z =0.0;
                                                     self.lineNeg90.hidden= true;
                                                     
                                                     
-                                                }      if (65>=zActual>=55){
+                                                }      if (65>=zActual && 55<=zActual){
                                                     
                                                     self.line0.hidden= true;
                                                     self.line15.hidden= true;
@@ -2688,7 +2710,7 @@ float z =0.0;
                                                     
                                                     self.random = self.random;
 
-                                                }      if  (80>=zActual>=70){
+                                                }      if  (80>=zActual && 70<=zActual){
                                                     
                                                     self.line0.hidden= true;
                                                     self.line15.hidden= true;
@@ -2705,7 +2727,7 @@ float z =0.0;
                                                     self.lineNeg90.hidden= true;
                                                     
                                                     
-                                                }      if (95>=zActual>=85){
+                                                }      if (95>=zActual && 85<=zActual){
                                                     
                                                     self.line0.hidden= true;
                                                     self.line15.hidden= true;
@@ -2723,6 +2745,7 @@ float z =0.0;
                                                     
                                                     
                                                 }
+                                            }
 #pragma mark 75
                                                 if (zAngle==75){
                                                     
@@ -2740,7 +2763,7 @@ float z =0.0;
                                                     self.barNeg75.hidden= true;
                                                     self.barNeg90.hidden= true;
                                                     
-                                                    if (-85>=zActual>=-95){
+                                                    if (-85>=zActual && -95<=zActual){
                                                         
                                                         self.line0.hidden= true;
                                                         self.line15.hidden= true;
@@ -2758,7 +2781,7 @@ float z =0.0;
                                                         
                                                         
                                                     }
-                                                    if (-70>=zActual>=-80){
+                                                    if (-70>=zActual && -80<=zActual){
                                                         
                                                         self.line0.hidden= true;
                                                         self.line15.hidden= true;
@@ -2775,7 +2798,7 @@ float z =0.0;
                                                         self.lineNeg90.hidden= true;
                                                         
                                                         
-                                                    }      if (-55>=zActual>=-65){
+                                                    }      if (-55>=zActual && -60<=zActual){
                                                         
                                                         self.line0.hidden= true;
                                                         self.line15.hidden= true;
@@ -2792,7 +2815,7 @@ float z =0.0;
                                                         self.lineNeg90.hidden= true;
                                                         
                                                         
-                                                    }      if (-40>=zActual>=-50){
+                                                    }      if (-40>=zActual && -50<=zActual){
                                                         
                                                         self.line0.hidden= true;
                                                         self.line15.hidden= true;
@@ -2809,7 +2832,7 @@ float z =0.0;
                                                         self.lineNeg90.hidden= true;
                                                         
                                                         
-                                                    }      if (-25>=zActual>=-35){
+                                                    }      if (-25>=zActual && -35<=zActual){
                                                         
                                                         self.line0.hidden= true;
                                                         self.line15.hidden= true;
@@ -2826,7 +2849,7 @@ float z =0.0;
                                                         self.lineNeg90.hidden= true;
                                                         
                                                         
-                                                    }      if (-10>=zActual>=-20){
+                                                    }      if (-10>=zActual && -20<=zActual){
                                                         
                                                         self.line0.hidden= true;
                                                         self.line15.hidden= true;
@@ -2843,7 +2866,7 @@ float z =0.0;
                                                         self.lineNeg90.hidden= true;
                                                         
                                                         
-                                                    }      if (5>=zActual>=-5){
+                                                    }      if (5>=zActual && -5<=zActual){
                                                         
                                                         self.line0.hidden= false;
                                                         self.line15.hidden= true;
@@ -2860,7 +2883,7 @@ float z =0.0;
                                                         self.lineNeg90.hidden= true;
                                                         
                                                         
-                                                    }      if (20>=zActual>=10){
+                                                    }      if (20>=zActual && 10<=zActual){
                                                         
                                                         self.line0.hidden= true;
                                                         self.line15.hidden= false;
@@ -2877,7 +2900,7 @@ float z =0.0;
                                                         self.lineNeg90.hidden= true;
                                                         
                                                         
-                                                    }      if (35>=zActual>=25){
+                                                    }      if (35>=zActual && 25<=zActual){
                                                         
                                                         self.line0.hidden= true;
                                                         self.line15.hidden= true;
@@ -2894,7 +2917,7 @@ float z =0.0;
                                                         self.lineNeg90.hidden= true;
                                                         
                                                         
-                                                    }      if (50>=zActual>=40){
+                                                    }      if (50>=zActual && 40<=zActual){
                                                         
                                                         self.line0.hidden= true;
                                                         self.line15.hidden= true;
@@ -2911,7 +2934,7 @@ float z =0.0;
                                                         self.lineNeg90.hidden= true;
                                                         
                                                         
-                                                    }      if (65>=zActual>=55){
+                                                    }      if (65>=zActual && 55<=zActual){
                                                         
                                                         self.line0.hidden= true;
                                                         self.line15.hidden= true;
@@ -2928,7 +2951,7 @@ float z =0.0;
                                                         self.lineNeg90.hidden= true;
                                                         
                                                         
-                                                    }      if  (80>=zActual>=70){
+                                                    }      if  (80>=zActual && 70<=zActual){
                                                         
                                                         self.line0.hidden= true;
                                                         self.line15.hidden= true;
@@ -2945,7 +2968,7 @@ float z =0.0;
                                                         self.lineNeg90.hidden= true;
                                                         
                                                         self.random = self.random;
-                                                    }      if (95>=zActual>=85){
+                                                    }      if (95>=zActual && 85<=zActual){
                                                         
                                                         self.line0.hidden= true;
                                                         self.line15.hidden= true;
@@ -2963,6 +2986,7 @@ float z =0.0;
                                                         
                                                         
                                                     }
+                                                }
 #pragma mark 90
                                                     if (zAngle==90){
                                                         
@@ -2980,7 +3004,7 @@ float z =0.0;
                                                         self.barNeg75.hidden= true;
                                                         self.barNeg90.hidden= true;
                                                         
-                                                        if (-85>=zActual>=-95){
+                                                        if (-85>=zActual && -95<=zActual){
                                                             
                                                             self.line0.hidden= true;
                                                             self.line15.hidden= true;
@@ -2998,7 +3022,7 @@ float z =0.0;
                                                             
                                                             
                                                         }
-                                                        if (-70>=zActual>=-80){
+                                                        if (-70>=zActual && -80<=zActual){
                                                             
                                                             self.line0.hidden= true;
                                                             self.line15.hidden= true;
@@ -3015,7 +3039,7 @@ float z =0.0;
                                                             self.lineNeg90.hidden= true;
                                                             
                                                             
-                                                        }      if (-55>=zActual>=-65){
+                                                        }      if (-55>=zActual && -60<=zActual){
                                                             
                                                             self.line0.hidden= true;
                                                             self.line15.hidden= true;
@@ -3032,7 +3056,7 @@ float z =0.0;
                                                             self.lineNeg90.hidden= true;
                                                             
                                                             
-                                                        }      if (-40>=zActual>=-50){
+                                                        }      if (-40>=zActual && -50<=zActual){
                                                             
                                                             self.line0.hidden= true;
                                                             self.line15.hidden= true;
@@ -3049,7 +3073,7 @@ float z =0.0;
                                                             self.lineNeg90.hidden= true;
                                                             
                                                             
-                                                        }      if (-25>=zActual>=-35){
+                                                        }      if (-25>=zActual && -35<=zActual){
                                                             
                                                             self.line0.hidden= true;
                                                             self.line15.hidden= true;
@@ -3066,7 +3090,7 @@ float z =0.0;
                                                             self.lineNeg90.hidden= true;
                                                             
                                                             
-                                                        }      if (-10>=zActual>=-20){
+                                                        }      if (-10>=zActual && -20<=zActual){
                                                             
                                                             self.line0.hidden= true;
                                                             self.line15.hidden= true;
@@ -3083,7 +3107,7 @@ float z =0.0;
                                                             self.lineNeg90.hidden= true;
                                                             
                                                             
-                                                        }      if (5>=zActual>=-5){
+                                                        }      if (5>=zActual && -5<=zActual){
                                                             
                                                             self.line0.hidden= false;
                                                             self.line15.hidden= true;
@@ -3100,7 +3124,7 @@ float z =0.0;
                                                             self.lineNeg90.hidden= true;
                                                             
                                                             
-                                                        }      if (20>=zActual>=10){
+                                                        }      if (20>=zActual && 10<=zActual){
                                                             
                                                             self.line0.hidden= true;
                                                             self.line15.hidden= false;
@@ -3117,7 +3141,7 @@ float z =0.0;
                                                             self.lineNeg90.hidden= true;
                                                             
                                                             
-                                                        }      if (35>=zActual>=25){
+                                                        }      if (35>=zActual && 25<=zActual){
                                                             
                                                             self.line0.hidden= true;
                                                             self.line15.hidden= true;
@@ -3134,7 +3158,7 @@ float z =0.0;
                                                             self.lineNeg90.hidden= true;
                                                             
                                                             
-                                                        }      if (50>=zActual>=40){
+                                                        }      if (50>=zActual && 40<=zActual){
                                                             
                                                             self.line0.hidden= true;
                                                             self.line15.hidden= true;
@@ -3151,7 +3175,7 @@ float z =0.0;
                                                             self.lineNeg90.hidden= true;
                                                             
                                                             
-                                                        }      if (65>=zActual>=55){
+                                                        }      if (65>=zActual && 55<=zActual){
                                                             
                                                             self.line0.hidden= true;
                                                             self.line15.hidden= true;
@@ -3168,7 +3192,7 @@ float z =0.0;
                                                             self.lineNeg90.hidden= true;
                                                             
                                                             
-                                                        }      if  (80>=zActual>=70){
+                                                        }      if  (80>=zActual && 70<=zActual){
                                                             
                                                             self.line0.hidden= true;
                                                             self.line15.hidden= true;
@@ -3185,7 +3209,7 @@ float z =0.0;
                                                             self.lineNeg90.hidden= true;
                                                             
                                                             
-                                                        }      if (95>=zActual>=85){
+                                                        }      if (95>=zActual && 85<=zActual){
                                                             
                                                             self.line0.hidden= true;
                                                             self.line15.hidden= true;
@@ -3204,18 +3228,7 @@ float z =0.0;
                                                             self.random = self.random;
                                                         }
                                                     }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+  
 }
 
 

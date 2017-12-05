@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "HomeViewController.h"
 
 @interface QuestionViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *QuestionBox;
@@ -33,7 +34,13 @@
 
 - (IBAction)submitPressed:(id)sender;
 
+@property HomeViewController* home;
 
+
+@property (weak, nonatomic) IBOutlet UIImageView *nextSectionImage;
+
+
+@property (weak, nonatomic) IBOutlet UIButton *nextSection;
 
 
 @end

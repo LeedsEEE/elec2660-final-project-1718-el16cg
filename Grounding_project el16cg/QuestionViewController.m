@@ -18,8 +18,17 @@ int x = 1;
     [super viewDidLoad];
      //self.synthesizer = [[AVSpeechSynthesizer alloc] init];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.nextSectionImage.hidden= true;
+    
+    if (self.home.guidedGroundingEnabled ==1) {
+    
+        
+        self.nextSectionImage.hidden= false;
+        
+        
 }
-
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

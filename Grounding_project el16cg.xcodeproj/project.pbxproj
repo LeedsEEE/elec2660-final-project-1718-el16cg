@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A80C2BFE1FD6AFB800B8941C /* Next Section button.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A80C2BFD1FD6AFB800B8941C /* Next Section button.jpg */; };
 		A85512781FD58AF000C3DC7E /* gyroscopeDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A85512771FD58AF000C3DC7E /* gyroscopeDataModel.m */; };
 		A855127A1FD58BBC00C3DC7E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A85512791FD58BBC00C3DC7E /* CoreMotion.framework */; };
 		A855127E1FD59B8700C3DC7E /* bars 0degrees.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A855127D1FD59B8700C3DC7E /* bars 0degrees.jpg */; };
@@ -70,6 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A80C2BFD1FD6AFB800B8941C /* Next Section button.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Next Section button.jpg"; sourceTree = "<group>"; };
 		A85512761FD58AF000C3DC7E /* gyroscopeDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gyroscopeDataModel.h; sourceTree = "<group>"; };
 		A85512771FD58AF000C3DC7E /* gyroscopeDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gyroscopeDataModel.m; sourceTree = "<group>"; };
 		A85512791FD58BBC00C3DC7E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
@@ -208,6 +210,7 @@
 				A85512771FD58AF000C3DC7E /* gyroscopeDataModel.m */,
 				A8D1C0791FC435A3004379E0 /* Assets.xcassets */,
 				A8D1C0A01FC447B1004379E0 /* Button.jpeg */,
+				A80C2BFD1FD6AFB800B8941C /* Next Section button.jpg */,
 				A8D1C07B1FC435A3004379E0 /* LaunchScreen.storyboard */,
 				A8D1C07E1FC435A3004379E0 /* Info.plist */,
 				A85B09241FC6F3F800D60147 /* right-speaker-with-three-sound-waves.png */,
@@ -377,6 +380,7 @@
 				A85512881FD5A67C00C3DC7E /* bars 75Degrees.jpg in Resources */,
 				A855128C1FD5A69100C3DC7E /* bars -30Degrees.jpg in Resources */,
 				A855127E1FD59B8700C3DC7E /* bars 0degrees.jpg in Resources */,
+				A80C2BFE1FD6AFB800B8941C /* Next Section button.jpg in Resources */,
 				A8D1C07D1FC435A3004379E0 /* LaunchScreen.storyboard in Resources */,
 				A880A0721FD5C18A004140EF /* line0.jpg in Resources */,
 				A880A0881FD5C296004140EF /* lineNeg75.jpg in Resources */,

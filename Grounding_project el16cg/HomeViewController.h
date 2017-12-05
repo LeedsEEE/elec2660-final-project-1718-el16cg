@@ -11,5 +11,10 @@
 @interface HomeViewController : UIViewController
 
 
+-(int)guidedGroundingEnabled;
+
+- (IBAction)guidedGroundingPressed:(id)sender;
+
+
 @end
 

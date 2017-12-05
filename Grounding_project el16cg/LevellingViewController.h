@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "gyroscopeDataModel.h"
+#import "HomeViewController.h"
+
+
 @interface LevellingViewController : UIViewController
 
 @property (nonatomic, strong) gyroscopeDataModel* gyro;
@@ -39,9 +42,15 @@
 @property (weak, nonatomic) IBOutlet UIImageView *lineNeg90;
 
 
-@property int random;
+@property NSInteger random;
 
 
 - (IBAction)leveller:(id)sender;
+
+
+@property HomeViewController* home;
+
+@property (weak, nonatomic) IBOutlet UIImageView *nextSectionImage;
+@property (weak, nonatomic) IBOutlet UIButton *nextSection;
 
 @end

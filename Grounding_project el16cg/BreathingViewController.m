@@ -21,7 +21,15 @@ int d=0;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.nextSectionImage.hidden= true;
     
+    if (self.home.guidedGroundingEnabled ==1) {
+        
+        
+        self.nextSectionImage.hidden= false;
+        
+        
+    }
     
     self.circlesLarge.hidden= true;
     self.circlesMedium.hidden= true;
@@ -30,7 +38,7 @@ int d=0;
     self.circlesSmall.hidden= true;
              NSTimer *timer;
     
-             timer = [NSTimer scheduledTimerWithTimeInterval: 1.5
+             timer = [NSTimer scheduledTimerWithTimeInterval: 1.2
                                                       target: self
                                                     selector: @selector(handleTimer1:)
                                                     userInfo: nil

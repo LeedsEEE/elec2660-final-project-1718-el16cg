@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HomeViewController.h"
 
 @interface BreathingViewController : UIViewController
 
@@ -24,5 +25,10 @@
 @property (weak, nonatomic) IBOutlet UIImageView *circlesLargest;
 @property (weak, nonatomic) IBOutlet UIImageView *circlesSmallest;
 
+
+@property HomeViewController* home;
+
+@property (weak, nonatomic) IBOutlet UIImageView *nextSectionImage;
+@property (weak, nonatomic) IBOutlet UIButton *nextSection;
 
 @end
