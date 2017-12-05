@@ -12,7 +12,7 @@
 
 
 @interface LevellingViewController : UIViewController
-
+@property int zAngle;
 @property (nonatomic, strong) gyroscopeDataModel* gyro;
 @property (weak, nonatomic) IBOutlet UIImageView *bar0;
 @property (weak, nonatomic) IBOutlet UIImageView *bar15;

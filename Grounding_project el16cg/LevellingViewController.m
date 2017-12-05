@@ -100,7 +100,7 @@ float z =0.0;
     int zAngle=(self.random*15)-90;
     NSLog(@"random= %ld",self.random);
        NSLog(@"angle= %d",zAngle);
-   
+    
 #pragma mark -90
     if (zAngle==-90){
        
@@ -136,8 +136,12 @@ float z =0.0;
             
             score=score+1;
             
-            self.random = self.random;
             
+            [self randomNumber];
+            
+           zAngle =(self.random*15)-90;
+            NSLog(@"Score= %d", score);
+
             self.scoreLabel.text =[NSString stringWithFormat:@"Score - %d ",score];
         }
         if (-70>=zActual && -80<=zActual){
@@ -398,7 +402,10 @@ float z =0.0;
                 self.lineNeg90.hidden= true;
                 
                     score=score+1;
-                self.random = self.random;
+                [self randomNumber];
+                NSLog(@"Score= %d", score);
+
+                zAngle=(self.random*15)-90;
                 self.scoreLabel.text =[NSString stringWithFormat:@"Score - %d ",score];
             }      if (-55>=zActual && -60<=zActual){
                 
@@ -602,9 +609,9 @@ float z =0.0;
                 self.barNeg15.hidden= true;
                 self.barNeg30.hidden= true;
                 self.barNeg45.hidden= true;
-                self.barNeg60.hidden= true;
+                self.barNeg60.hidden= false;
                 self.barNeg75.hidden= true;
-                self.barNeg90.hidden= false;
+                self.barNeg90.hidden= true;
                 
                 if (-85>=zActual && -95<=zActual){
                     
@@ -659,8 +666,11 @@ float z =0.0;
                     
                         score=score+1;
                     
-                     self.random = self.random;
-                    
+                     [self randomNumber];
+                    NSLog(@"Score= %d", score);
+
+                    zAngle=(self.random*15)-90;
+                    NSLog(@"Score= %d", score);
                     self.scoreLabel.text =[NSString stringWithFormat:@"Score - %d ",score];
                     
                 }      if (-40>=zActual && -50<=zActual){
@@ -923,7 +933,11 @@ float z =0.0;
                         
                             score=score+1;
                         
-                         self.random = self.random;
+                         [self randomNumber];
+                        NSLog(@"Score= %d", score);
+
+                        
+                        zAngle=(self.random*15)-90;
                         self.scoreLabel.text =[NSString stringWithFormat:@"Score - %d ",score];
                     }      if (-25>=zActual && -35<=zActual){
                         
@@ -1114,8 +1128,11 @@ float z =0.0;
                             self.lineNeg90.hidden= true;
                             
                                 score=score+1;
+                            NSLog(@"Score= %d", score);
+
                             
-                            self.random = self.random;
+                            [self randomNumber];
+                            zAngle=(self.random*15)-90;
                             self.scoreLabel.text =[NSString stringWithFormat:@"Score - %d ",score];
                         }
                         if (-70>=zActual && -80<=zActual){
@@ -1187,7 +1204,10 @@ float z =0.0;
                             
                                 score=score+1;
                             
-                            self.random = self.random;
+                            NSLog(@"Score= %d", score);
+
+                            [self randomNumber];
+                            zAngle=(self.random*15)-90;
                             self.scoreLabel.text =[NSString stringWithFormat:@"Score - %d ",score];
                         }      if (-10>=zActual && -20<=zActual){
                             
@@ -1447,8 +1467,10 @@ float z =0.0;
                                 self.lineNeg90.hidden= true;
                                 
                                     score=score+1;
+                                NSLog(@"Score= %d", score);
                                 
-                                self.random = self.random;
+                                [self randomNumber];
+                                zAngle=(self.random*15)-90;
                                 self.scoreLabel.text =[NSString stringWithFormat:@"Score - %d ",score];
                             }      if (5>=zActual && -5<=zActual){
                                 
@@ -1708,8 +1730,10 @@ float z =0.0;
                                     self.lineNeg90.hidden= true;
                                     
                                         score=score+1;
-                                    
-                                    self.random = self.random;
+                                    NSLog(@"Score= %d", score);
+
+                                    [self randomNumber];
+                                   zAngle=(self.random*15)-90;
                                     self.scoreLabel.text =[NSString stringWithFormat:@"Score - %d ",score];
                                 }      if (20>=zActual && 10<=zActual){
                                     
@@ -1819,7 +1843,7 @@ float z =0.0;
                                 if (zAngle==15){
                                     
                                     self.bar0.hidden= true;
-                                    self.bar15.hidden= true;
+                                    self.bar15.hidden= false;
                                     self.bar30.hidden= true;
                                     self.bar45.hidden= true;
                                     self.bar60.hidden= true;
@@ -1830,7 +1854,7 @@ float z =0.0;
                                     self.barNeg45.hidden= true;
                                     self.barNeg60.hidden= true;
                                     self.barNeg75.hidden= true;
-                                    self.barNeg90.hidden= false;
+                                    self.barNeg90.hidden= true;
                                     
                                     if (-85>=zActual && -95<=zActual){
                                         
@@ -1969,8 +1993,10 @@ float z =0.0;
                                         self.lineNeg90.hidden= true;
                                         
                                             score=score+1;
-                                        
-                                        self.random = self.random;
+                                        NSLog(@"Score= %d", score);
+
+                                        [self randomNumber];
+                                        zAngle=(self.random*15)-90;
                                         self.scoreLabel.text =[NSString stringWithFormat:@"Score - %d ",score];
                                     }      if (35>=zActual && 25<=zActual){
                                         
@@ -2230,8 +2256,11 @@ float z =0.0;
                                             self.lineNeg90.hidden= true;
                                             
                                                 score=score+1;
+                                            NSLog(@"Score= %d", score);
+
                                             
-                                        self.random = self.random;
+                                        [self randomNumber];
+                                            zAngle=(self.random*15)-90;
                                             self.scoreLabel.text =[NSString stringWithFormat:@"Score - %d ",score];
                                         }      if (50>=zActual && 40<=zActual){
                                             
@@ -2491,8 +2520,11 @@ float z =0.0;
                                                 self.lineNeg90.hidden= true;
                                                 
                                                     score=score+1;
+                                                NSLog(@"Score= %d", score);
+
                                                 
-                                                 self.random = self.random;
+                                                 [self randomNumber];
+                                                zAngle=(self.random*15)-90;
                                                 self.scoreLabel.text =[NSString stringWithFormat:@"Score - %d ",score];
                                             }      if (65>=zActual && 55<=zActual){
                                                 
@@ -2751,8 +2783,11 @@ float z =0.0;
                                                     self.lineNeg90.hidden= true;
                                                     
                                                         score=score+1;
+                                                    NSLog(@"Score= %d", score);
+
                                                     
-                                                    self.random = self.random;
+                                                    [self randomNumber];
+                                                    zAngle=(self.random*15)-90;
                                                     self.scoreLabel.text =[NSString stringWithFormat:@"Score - %d ",score];
 
                                                 }      if  (80>=zActual && 70<=zActual){
@@ -3013,8 +3048,11 @@ float z =0.0;
                                                         self.lineNeg90.hidden= true;
                                                         
                                                             score=score+1;
+                                                        NSLog(@"Score= %d", score);
+
                                                         
-                                                        self.random = self.random;
+                                                        [self randomNumber];
+                                                        zAngle=(self.random*15)-90;
                                                         self.scoreLabel.text =[NSString stringWithFormat:@"Score - %d ",score];
                                                     }      if (95>=zActual && 85<=zActual){
                                                         
@@ -3273,14 +3311,13 @@ float z =0.0;
                                                             self.lineNeg75.hidden= true;
                                                             self.lineNeg90.hidden= true;
                                                             
-                                                                score=score+1;
-                                                            
-                                                            self.random = self.random;
+                                                            [self randomNumber];
+                                                             zAngle=(self.random*15)-90;
                                                             self.scoreLabel.text =[NSString stringWithFormat:@"Score - %d ",score];
                                                         }
                                                     }
-  
 }
+
 
 
 @end
