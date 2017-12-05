@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import "HomeViewController.h"
+#import "draw_view.h"
 
 @interface QuestionViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *QuestionBox;

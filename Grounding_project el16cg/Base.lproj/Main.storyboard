@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN" customClass="draw_view">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -568,7 +568,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="1xm-oi-OaU"/>
         <segue reference="oog-nE-P5h"/>
-        <segue reference="hvU-cP-C17"/>
+        <segue reference="EIb-4B-A2V"/>
         <segue reference="5aH-Ok-vxE"/>
     </inferredMetricsTieBreakers>
 </document>
