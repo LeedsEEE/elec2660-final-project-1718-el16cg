@@ -132,7 +132,7 @@ float z =0.0;
             self.lineNeg45.hidden= true;
             self.lineNeg60.hidden= true;
             self.lineNeg75.hidden= true;
-            self.lineNeg90.hidden= true;
+            self.lineNeg90.hidden= false;
             
             score=score+1;
             
