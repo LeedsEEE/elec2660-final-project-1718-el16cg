@@ -42,7 +42,8 @@ int d=0;
                                                       target: self
                                                     selector: @selector(handleTimer1:)
                                                     userInfo: nil
-                                                     repeats: YES];}
+                                                     repeats: YES];
+}
 
 
 
