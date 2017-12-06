@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" tag="-3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Button.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="vn5-CI-6CG">
-                                <frame key="frameInset" minX="73" minY="507" width="228" height="105"/>
+                                <frame key="frameInset" minX="27" minY="507" width="322" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" tag="-3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Button.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="5II-3K-lYc">
@@ -29,6 +29,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmb-C2-YJe">
                                 <frame key="frameInset" minY="325" width="156" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Levelling"/>
                                 <connections>
                                     <segue destination="h6Q-nA-s3o" kind="show" id="1xm-oi-OaU"/>
@@ -45,6 +46,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GnI-TA-m6x">
                                 <frame key="frameInset" minX="109" minY="153" width="156" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Questions"/>
                                 <connections>
                                     <segue destination="tyL-ff-CN9" kind="show" id="5aH-Ok-vxE"/>
@@ -53,24 +55,25 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYX-fj-w8I">
                                 <frame key="frameInset" minX="219" minY="326" width="156" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Breathing"/>
                                 <connections>
                                     <segue destination="KRV-vN-eBU" kind="show" id="EIb-4B-A2V"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grounding" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xa9-WY-ag4">
-                                <frame key="frameInset" minX="119" minY="72" width="135" height="81"/>
+                                <frame key="frameInset" minX="88" minY="64" width="196" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzr-sd-PBa">
-                                <frame key="frameInset" minX="73" minY="507" width="228" height="105"/>
+                                <frame key="frameInset" minX="27" minY="507" width="322" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <state key="normal" title="Guided Grounding"/>
                                 <connections>
-                                    <action selector="guidedGroundingPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="l77-Rk-hou"/>
                                     <segue destination="tyL-ff-CN9" kind="show" id="1al-W0-x8r"/>
                                 </connections>
                             </button>
@@ -87,7 +90,7 @@
         <!--QuestionViewController-->
         <scene sceneID="x2L-AO-BBC">
             <objects>
-                <viewController id="tyL-ff-CN9" userLabel="QuestionViewController" customClass="QuestionViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="questions" id="tyL-ff-CN9" userLabel="QuestionViewController" customClass="QuestionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jW4-Ff-6fs"/>
                         <viewControllerLayoutGuide type="bottom" id="0fJ-C4-Pj3"/>
@@ -108,13 +111,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="right-speaker-with-three-sound-waves.png"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Questions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzM-91-cDc">
-                                <frame key="frameInset" minX="148" minY="72" width="78" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter Answer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yWe-oa-1NS">
                                 <frame key="frameInset" minX="16" minY="126" width="168" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -222,6 +218,13 @@
                                     <segue destination="h6Q-nA-s3o" kind="show" id="OKv-O1-0d0"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Questions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzM-91-cDc">
+                                <frame key="frameInset" minX="130" minY="32" width="115" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
@@ -263,12 +266,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Levelling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FT-cJ-K8S">
-                                <frame key="frameInset" minX="154" minY="72" width="67" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line0.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7Jn-9C-ZVV">
                                 <frame key="frameInset" minX="67" minY="252" width="262" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -353,6 +350,10 @@
                                 <frame key="frameInset" minX="67" minY="220" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BarNeg30.png" translatesAutoresizingMaskIntoConstraints="NO" id="SvF-zi-TXc">
+                                <frame key="frameInset" minX="44" minY="252" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BarNeg45.png" translatesAutoresizingMaskIntoConstraints="NO" id="xZN-m0-yWo">
                                 <frame key="frameInset" minX="47" minY="275" width="180" height="176"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -399,14 +400,28 @@
                                 <frame key="frameInset" minX="91" minY="617" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BarNeg30.png" translatesAutoresizingMaskIntoConstraints="NO" id="SvF-zi-TXc">
-                                <frame key="frameInset" minX="44" minY="252" width="240" height="128"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rotate the phone to line up the lines and the bars" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diq-RL-nsw">
+                                <frame key="frameInset" minX="87" minY="148" width="200" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FT-cJ-K8S">
+                                <frame key="frameInset" minX="94" minY="28" width="186" height="65"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Levelling">
+                                        <attributes>
+                                            <font key="NSFont" size="30" name=".SFNSDisplay"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4FT-cJ-K8S" firstAttribute="centerX" secondItem="yhM-Qo-u06" secondAttribute="centerX" id="uc6-p0-HXk"/>
                             <constraint firstItem="4FT-cJ-K8S" firstAttribute="centerX" secondItem="yhM-Qo-u06" secondAttribute="centerX" id="vCl-qw-65L"/>
                         </constraints>
                     </view>
@@ -573,7 +588,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="1xm-oi-OaU"/>
         <segue reference="oog-nE-P5h"/>
-        <segue reference="hvU-cP-C17"/>
+        <segue reference="EIb-4B-A2V"/>
         <segue reference="5aH-Ok-vxE"/>
     </inferredMetricsTieBreakers>
 </document>

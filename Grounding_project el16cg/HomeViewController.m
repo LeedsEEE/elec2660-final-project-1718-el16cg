@@ -29,6 +29,11 @@ int guidedGroundingEnabled =0;
 
 - (IBAction)guidedGroundingPressed:(id)sender {
    int guidedGroundingEnabled =1;
+    
+    UIStoryboard *main = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *vc = [main instantiateViewControllerWithIdentifier:@"questions"];
+    [self presentViewController:vc animated:YES completion:nil];
+    
 }
 
 
