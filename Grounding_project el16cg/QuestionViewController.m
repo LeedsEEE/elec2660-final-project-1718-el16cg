@@ -12,15 +12,20 @@
 
 @end
 
+
+
+
 @implementation QuestionViewController
 int x = 1;
+
+// x is the question number currently being asked ie starts at one
 - (void)viewDidLoad {
     [super viewDidLoad];
      //self.synthesizer = [[AVSpeechSynthesizer alloc] init];
     // Do any additional setup after loading the view, typically from a nib.
     
     self.nextSectionImage.hidden= true;
-    
+    // guided grounding button
     if (self.home.guidedGroundingEnabled ==1) {
     
         
@@ -34,7 +39,7 @@ int x = 1;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+#pragma mark - voice synthesiser
 - (IBAction)MicButton:(id)sender {
     AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc] initWithString:@"Hello"];
     [self.synthesizer speakUtterance:utterance];
@@ -57,7 +62,8 @@ int x = 1;
    
     
 }
-
+#pragma mark - answer submission
+// when an answer is submitted it pastes the answer in an answer box and displays the next question
 - (IBAction)submitPressed:(id)sender {
 
     if (x==1) {
@@ -67,7 +73,7 @@ int x = 1;
         
         x=x+1;
         
-        self.QuestionBox.text = @"question2";
+        self.QuestionBox.text = @"How old are you?";
         
     }
     else if (x==2) {
@@ -79,7 +85,7 @@ int x = 1;
         x=x+1;
         
         
-        self.QuestionBox.text = @"question3";
+        self.QuestionBox.text = @"What day of the week is it?";
     
     }
     else if (x==3) {
@@ -89,7 +95,7 @@ int x = 1;
         self.answer3.text =[NSString stringWithFormat:@"%d - %@",x, self.AnswerBox.text];
         
         x=x+1;
-        self.QuestionBox.text = @"question4";
+        self.QuestionBox.text = @"What colour top are you wearing?";
         
     }
     else if (x==4) {
@@ -99,7 +105,7 @@ int x = 1;
         self.answer4.text =[NSString stringWithFormat:@"%d - %@",x, self.AnswerBox.text];
         
         x=x+1;
-        self.QuestionBox.text = @"question5";
+        self.QuestionBox.text = @"How many lights are there on the room?";
         
     }
     else if (x==5) {
@@ -109,9 +115,10 @@ int x = 1;
         self.answer5.text =[NSString stringWithFormat:@"%d - %@",x, self.AnswerBox.text];
         
         x=x+1;
-        self.QuestionBox.text = @"question6";
+        self.QuestionBox.text = @"How many yellow objects can you see?";
         
     }
+#pragma mark - question 6
     else if (x==6) {
         
         
@@ -119,7 +126,7 @@ int x = 1;
         self.answer6.text =[NSString stringWithFormat:@"%d - %@",x, self.AnswerBox.text];
         
         x=x+1;
-        self.QuestionBox.text = @"question7";
+        self.QuestionBox.text = @"Name something you can see";
         
     }
     else if (x==7) {
@@ -129,7 +136,7 @@ int x = 1;
         self.answer7.text =[NSString stringWithFormat:@"%d - %@",x, self.AnswerBox.text];
         
         x=x+1;
-        self.QuestionBox.text = @"question8";
+        self.QuestionBox.text = @"Something you can touch";
         
     }
     else if (x==8) {
@@ -139,7 +146,7 @@ int x = 1;
         self.answer8.text =[NSString stringWithFormat:@"%d - %@",x, self.AnswerBox.text];
         
         x=x+1;
-        self.QuestionBox.text = @"question9";
+        self.QuestionBox.text = @"Something you can hear";
         
     }
     else if (x==9) {
@@ -149,7 +156,7 @@ int x = 1;
         self.answer9.text =[NSString stringWithFormat:@"%d - %@",x, self.AnswerBox.text];
         
         x=x+1;
-        self.QuestionBox.text = @"question10";
+        self.QuestionBox.text = @"Something you can smell";
         
     }
     else if (x==10) {
@@ -159,7 +166,7 @@ int x = 1;
         self.answer10.text =[NSString stringWithFormat:@"%d - %@",x, self.AnswerBox.text];
         
         x=x+1;
-        self.QuestionBox.text = @"question11";
+        self.QuestionBox.text = @"Something you can taste";
         
     }
     else if (x==11) {
@@ -170,7 +177,7 @@ int x = 1;
         
         x=x+1;
         self.QuestionBox.text = @"No more Questions";
-        
+        // submitting answers after this will no longer display questions
     }
     
     

@@ -26,7 +26,7 @@ int guidedGroundingEnabled =0;
     // Dispose of any resources that can be recreated.
 }
 
-
+// guided grounding is used to bring the users through all three parts and was designed with the idea that in an anxiety attack, the user will need that little extra guidance to get them started
 - (IBAction)guidedGroundingPressed:(id)sender {
    int guidedGroundingEnabled =1;
     

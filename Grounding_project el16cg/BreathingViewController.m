@@ -17,7 +17,7 @@
 int c=100;
 //rate of change of d
 int d=0;
-//rate of change of r
+//rate of change of r, controls which circles are shown
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -36,6 +36,8 @@ int d=0;
     self.circlesSmallest.hidden= false;
     self.circlesLargest.hidden= true;
     self.circlesSmall.hidden= true;
+    
+    // shows the smallest group of circles
              NSTimer *timer;
     
              timer = [NSTimer scheduledTimerWithTimeInterval: 1.2
@@ -43,6 +45,7 @@ int d=0;
                                                     selector: @selector(handleTimer1:)
                                                     userInfo: nil
                                                      repeats: YES];
+    //leads to an increment
 }
 
 
@@ -54,9 +57,11 @@ int d=0;
 
 
 
-
+#pragma mark - timer
 -(void)handleTimer1:(NSTimer *)timer {
     d=d+c;
+    
+    // increases the value of d and upon reaching the maximum or minimum changes the direction of the increment
     if(d>200){
         
         
@@ -75,7 +80,7 @@ int d=0;
         self.circlesSmallest.hidden= false;
         
         self.breath.text= @"Breathe in";
-        
+        // labels switch upon the change in sign of c
         
     }
     

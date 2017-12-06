@@ -16,11 +16,14 @@
 
 @implementation LevellingViewController
 
-
+// bars are the green bars and line refers to the black line
 
 int score =0;
+// score
 int zAngle = 0;
+// the angle the bar is currently sitting at
 float z =0.0;
+#pragma mark - viewDidLoad
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -62,7 +65,7 @@ float z =0.0;
     self.lineNeg75.hidden= true;
     self.lineNeg90.hidden= true;
     
-    
+    // sets all images to hidden
     
     
 }
@@ -70,7 +73,7 @@ float z =0.0;
     
     self.random= arc4random() % 12;
     nil;
-   
+   // random number controls which bar will be shown
     
 }
 - (void) viewDidDisappear:(BOOL)animated{
@@ -128,13 +131,14 @@ float z =0.0;
     score += 1;
     [self randomNumber];
     zAngle =(int)(self.random*15)-90;
+    //zangle is determined by the random number
     NSLog(@"Score= %d", score);
     self.scoreLabel.text =[NSString stringWithFormat:@"Score - %d ",score];
 }
 
 #pragma mark - function top
 - (IBAction)leveller:(id)sender {
-    
+    //the angle 0degrees is determined on the z axis by drawing an axis through the phone perpendicular to the ground, this action allows for the z axis to be dawn when the phone is in the desired position to properly callibrate it
     self.gyro.startGyro;
     
     [self randomNumber];
@@ -147,12 +151,15 @@ float z =0.0;
                                                     userInfo: nil
                                                      repeats: YES];
 }
-
+#pragma mark - gyro update
 -(void)update:(NSTimer *)callingTimer{
-    //float zActual= self.gyro.updateData;
-    float zActual = _LevelSlider.value * 200.0 - 100.0;
+    float zActual= self.gyro.updateData;
+    // zActual is the angle the phone is being tilted at
+//    float zActual = _LevelSlider.value * 200.0 - 100.0;
+//    // the float is purely for testing purposes and simulates the phone being tilted ,uncomment if tilting a phone is not possible and comment the lines above the slider
     NSLog(@"random= %ld",self.random);
     NSLog(@"angle= %d",zAngle);
+   // upon the line and bars meeting, adds a point to the score and randomises and resets the bar with the new location
     
     
     NSArray *angles = [NSArray arrayWithObjects:@0, @15, @30, @45, @60, @75, @90, @(-15), @(-30), @(-45), @(-60), @(-75), @(-90), nil];
