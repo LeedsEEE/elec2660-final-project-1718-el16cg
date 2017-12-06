@@ -270,7 +270,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line0.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7Jn-9C-ZVV">
-                                <frame key="frameInset" minX="67" minY="252" width="262" height="9"/>
+                                <frame key="frameInset" minX="67" minY="252" width="262" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line15.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="eHp-vl-jGj">
@@ -321,55 +321,51 @@
                                 <frame key="frameInset" minX="156" minY="367" width="7" height="224"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars 0degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SSN-qT-Eq4">
-                                <frame key="frameInset" minX="67" minY="243" width="240" height="32"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bar0-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="SSN-qT-Eq4">
+                                <frame key="frameInset" minX="85" minY="243" width="244" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars 15degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cR1-FA-F1a">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bar15.png" translatesAutoresizingMaskIntoConstraints="NO" id="cR1-FA-F1a">
                                 <frame key="frameInset" minX="127" minY="220" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars 30Degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nxf-XS-EsJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bar30.png" translatesAutoresizingMaskIntoConstraints="NO" id="nxf-XS-EsJ">
                                 <frame key="frameInset" minX="135" minY="252" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars 45Degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ngr-fA-39L">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bar45.png" translatesAutoresizingMaskIntoConstraints="NO" id="ngr-fA-39L">
                                 <frame key="frameInset" minX="202" minY="268" width="146" height="171"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars 60Degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="h4t-XQ-CDB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bar60.png" translatesAutoresizingMaskIntoConstraints="NO" id="h4t-XQ-CDB">
                                 <frame key="frameInset" minX="155" minY="302" width="240" height="189"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars 75Degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kiP-Iy-Kev">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bar 75.png" translatesAutoresizingMaskIntoConstraints="NO" id="kiP-Iy-Kev">
                                 <frame key="frameInset" minX="235" minY="316" width="72" height="223"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars 90 degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="85R-M2-tzK">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bar90.png" translatesAutoresizingMaskIntoConstraints="NO" id="85R-M2-tzK">
                                 <frame key="frameInset" minX="135" minY="367" width="240" height="224"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars -15Degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bUv-ha-ZJe">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BarNeg15.png" translatesAutoresizingMaskIntoConstraints="NO" id="bUv-ha-ZJe">
                                 <frame key="frameInset" minX="67" minY="220" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars -30Degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SvF-zi-TXc">
-                                <frame key="frameInset" minX="39" minY="252" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars -45Degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xZN-m0-yWo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BarNeg45.png" translatesAutoresizingMaskIntoConstraints="NO" id="xZN-m0-yWo">
                                 <frame key="frameInset" minX="47" minY="275" width="180" height="176"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars -60Degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0Tm-o5-730">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BarNeg60.png" translatesAutoresizingMaskIntoConstraints="NO" id="0Tm-o5-730">
                                 <frame key="frameInset" minX="17" minY="303" width="240" height="207"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars -75Degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zDj-DZ-EqC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BarNeg75.png" translatesAutoresizingMaskIntoConstraints="NO" id="zDj-DZ-EqC">
                                 <frame key="frameInset" minX="17" minY="340" width="240" height="229"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bars 90 degrees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3pf-W9-u47">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bar90.png" translatesAutoresizingMaskIntoConstraints="NO" id="3pf-W9-u47">
                                 <frame key="frameInset" minX="39" minY="367" width="240" height="224"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -403,6 +399,10 @@
                                 <frame key="frameInset" minX="91" minY="617" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BarNeg30.png" translatesAutoresizingMaskIntoConstraints="NO" id="SvF-zi-TXc">
+                                <frame key="frameInset" minX="44" minY="252" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -540,21 +540,21 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Bar 75.png" width="137" height="375"/>
+        <image name="Bar0-2.png" width="375" height="32"/>
+        <image name="Bar15.png" width="374" height="128"/>
+        <image name="Bar30.png" width="350" height="218"/>
+        <image name="Bar45.png" width="292" height="293"/>
+        <image name="Bar60.png" width="217" height="351"/>
+        <image name="Bar90.png" width="42" height="376"/>
+        <image name="BarNeg15.png" width="374" height="133"/>
+        <image name="BarNeg30.png" width="345" height="223"/>
+        <image name="BarNeg45.png" width="283" height="279"/>
+        <image name="BarNeg60.png" width="220" height="329"/>
+        <image name="BarNeg75.png" width="134" height="362"/>
         <image name="Button.jpeg" width="121" height="62"/>
         <image name="Circle.png" width="151" height="152"/>
         <image name="Next Section button.jpg" width="121" height="62"/>
-        <image name="bars -15Degrees.jpg" width="539" height="192"/>
-        <image name="bars -30Degrees.jpg" width="500" height="320"/>
-        <image name="bars -45Degrees.jpg" width="428" height="429"/>
-        <image name="bars -60Degrees.jpg" width="329" height="501"/>
-        <image name="bars -75Degrees.jpg" width="201" height="540"/>
-        <image name="bars 0degrees.jpg" width="541" height="62"/>
-        <image name="bars 15degrees.jpg" width="539" height="192"/>
-        <image name="bars 30Degrees.jpg" width="500" height="320"/>
-        <image name="bars 45Degrees.jpg" width="428" height="429"/>
-        <image name="bars 60Degrees.jpg" width="325" height="501"/>
-        <image name="bars 75Degrees.jpg" width="201" height="540"/>
-        <image name="bars 90 degrees.jpg" width="62" height="542"/>
         <image name="first" width="30" height="30"/>
         <image name="line0.jpg" width="213" height="3"/>
         <image name="line15.jpg" width="204" height="58"/>
@@ -573,7 +573,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="1xm-oi-OaU"/>
         <segue reference="oog-nE-P5h"/>
-        <segue reference="EIb-4B-A2V"/>
+        <segue reference="hvU-cP-C17"/>
         <segue reference="5aH-Ok-vxE"/>
     </inferredMetricsTieBreakers>
 </document>

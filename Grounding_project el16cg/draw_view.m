@@ -37,9 +37,9 @@ int MainInt;
     
     CGContextSetFillColorWithColor(context,white);
     
-    CGContextMoveToPoint(context ,0,0);
+    CGContextMoveToPoint(context ,0,100);
     CGContextAddLineToPoint(context, 100, 0);
-    CGContextAddLineToPoint(context, 0, 100);
+    CGContextAddLineToPoint(context, 0, 200);
     
     CGContextClosePath(context);
 }
