@@ -26,10 +26,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *circlesSmallest;
 
 
-@property HomeViewController* home;
 
-
-@property (weak, nonatomic) IBOutlet UIImageView *nextSectionImage;
-@property (weak, nonatomic) IBOutlet UIButton *nextSection;
 
 @end

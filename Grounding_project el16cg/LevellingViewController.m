@@ -27,16 +27,11 @@ float z =0.0;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.nextSectionImage.hidden= true;
-    
-    if (self.home.guidedGroundingEnabled ==1) {
-        
-        
-        self.nextSectionImage.hidden= false;
+  
         
         self.scoreLabel.text =[NSString stringWithFormat:@"Score - %d ",score];
  
-    }
+    
     
     self.bar0.hidden= true;
     self.bar15.hidden= true;

@@ -21,18 +21,10 @@ int x = 1;
 // x is the question number currently being asked ie starts at one
 - (void)viewDidLoad {
     [super viewDidLoad];
-     //self.synthesizer = [[AVSpeechSynthesizer alloc] init];
+     self.synthesizer = [[AVSpeechSynthesizer alloc] init];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.nextSectionImage.hidden= true;
-    // guided grounding button
-    if (self.home.guidedGroundingEnabled ==1) {
-    
-        
-        self.nextSectionImage.hidden= false;
-        
-        
-}
+  
 }
 
 - (void)didReceiveMemoryWarning {

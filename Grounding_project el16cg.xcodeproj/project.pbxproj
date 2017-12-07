@@ -25,7 +25,6 @@
 		A880A0861FD5C296004140EF /* lineNeg45.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A880A0811FD5C296004140EF /* lineNeg45.jpg */; };
 		A880A0871FD5C296004140EF /* lineNeg60.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A880A0821FD5C296004140EF /* lineNeg60.jpg */; };
 		A880A0881FD5C296004140EF /* lineNeg75.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A880A0831FD5C296004140EF /* lineNeg75.jpg */; };
-		A8820BC11FC84F7A000DD5B5 /* draw_view.m in Sources */ = {isa = PBXBuildFile; fileRef = A8820BC01FC84F7A000DD5B5 /* draw_view.m */; };
 		A8820BC41FC84FBE000DD5B5 /* BreathingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8820BC31FC84FBE000DD5B5 /* BreathingViewController.m */; };
 		A8820BC71FC87861000DD5B5 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8820BC61FC87861000DD5B5 /* SpriteKit.framework */; };
 		A8B463161FD178380034F646 /* Circle.png in Resources */ = {isa = PBXBuildFile; fileRef = A8B463151FD178380034F646 /* Circle.png */; };
@@ -92,8 +91,6 @@
 		A880A0811FD5C296004140EF /* lineNeg45.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lineNeg45.jpg; sourceTree = "<group>"; };
 		A880A0821FD5C296004140EF /* lineNeg60.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lineNeg60.jpg; sourceTree = "<group>"; };
 		A880A0831FD5C296004140EF /* lineNeg75.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lineNeg75.jpg; sourceTree = "<group>"; };
-		A8820BBF1FC84F7A000DD5B5 /* draw_view.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = draw_view.h; sourceTree = "<group>"; };
-		A8820BC01FC84F7A000DD5B5 /* draw_view.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = draw_view.m; sourceTree = "<group>"; };
 		A8820BC21FC84FBE000DD5B5 /* BreathingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BreathingViewController.h; sourceTree = "<group>"; };
 		A8820BC31FC84FBE000DD5B5 /* BreathingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BreathingViewController.m; sourceTree = "<group>"; };
 		A8820BC61FC87861000DD5B5 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
@@ -200,8 +197,6 @@
 				A8D1C0731FC435A3004379E0 /* QuestionViewController.h */,
 				A8D1C0741FC435A3004379E0 /* QuestionViewController.m */,
 				A8D1C0761FC435A3004379E0 /* Main.storyboard */,
-				A8820BBF1FC84F7A000DD5B5 /* draw_view.h */,
-				A8820BC01FC84F7A000DD5B5 /* draw_view.m */,
 				A8820BC21FC84FBE000DD5B5 /* BreathingViewController.h */,
 				A8820BC31FC84FBE000DD5B5 /* BreathingViewController.m */,
 				A85B09261FC6F76400D60147 /* LevellingViewController.h */,
@@ -436,7 +431,6 @@
 				A8D1C06F1FC435A3004379E0 /* AppDelegate.m in Sources */,
 				A8D1C0721FC435A3004379E0 /* HomeViewController.m in Sources */,
 				A8768F531FC4863C00F55F6E /* QuestionTableViewController.m in Sources */,
-				A8820BC11FC84F7A000DD5B5 /* draw_view.m in Sources */,
 				A8D1C06C1FC435A3004379E0 /* main.m in Sources */,
 				A8820BC41FC84FBE000DD5B5 /* BreathingViewController.m in Sources */,
 				A85512781FD58AF000C3DC7E /* gyroscopeDataModel.m in Sources */,

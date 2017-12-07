@@ -21,15 +21,8 @@ int d=0;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.nextSectionImage.hidden= true;
+          
     
-    if (self.home.guidedGroundingEnabled ==1) {
-        
-        
-        self.nextSectionImage.hidden= false;
-        
-        
-    }
     
     self.circlesLarge.hidden= true;
     self.circlesMedium.hidden= true;

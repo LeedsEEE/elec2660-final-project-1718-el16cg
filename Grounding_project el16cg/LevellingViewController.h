@@ -49,10 +49,7 @@
 - (IBAction)leveller:(id)sender;
 
 
-@property HomeViewController* home;
 
-@property (weak, nonatomic) IBOutlet UIImageView *nextSectionImage;
-@property (weak, nonatomic) IBOutlet UIButton *nextSection;
 @property (weak, nonatomic) IBOutlet UISlider *LevelSlider;
 
 @end
